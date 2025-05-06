@@ -46,7 +46,7 @@ public class WMS_TestBase implements WMS_GlobalProperties {
 	public ExtentHtmlReporter htmlReporter;
 	public ExtentTest test;
 	public boolean CloseBrowser = true;
-	private KeepScreenAwake keepAwake;
+	public static KeepScreenAwake keepAwake;
 
 	//--------------------------------------------------------------------------------------------------
 	public void setReport(String testName) throws InterruptedException {
@@ -404,7 +404,7 @@ public class WMS_TestBase implements WMS_GlobalProperties {
 	}
 
 	// Inner class to keep the screen awake
-	class KeepScreenAwake {
+	public static class KeepScreenAwake {
 		private Thread keepAwakeThread;
 		private boolean running = true;
 
