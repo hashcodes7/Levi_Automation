@@ -19,6 +19,8 @@ import org.testng.annotations.DataProvider;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.WMS_Utilities.WMS_GlobalProperties;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class DataProviders implements WMS_GlobalProperties {
 
