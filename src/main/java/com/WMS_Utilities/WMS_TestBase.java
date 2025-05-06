@@ -404,7 +404,7 @@ public class WMS_TestBase implements WMS_GlobalProperties {
 	}
 
 	// Inner class to keep the screen awake
-	public static class KeepScreenAwake {
+	private static class KeepScreenAwake {
 		private Thread keepAwakeThread;
 		private boolean running = true;
 
