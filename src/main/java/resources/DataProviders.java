@@ -21,6 +21,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.WMS_Utilities.WMS_GlobalProperties;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.nio.file.Path;
 
 public class DataProviders implements WMS_GlobalProperties {
 
@@ -3484,7 +3485,6 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "TC292_P0_E2E_CreateColors_Solid")
 	public static Iterator<Object[]> TC292_P0_E2E_CreateColors_Solid() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
 		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
     FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
