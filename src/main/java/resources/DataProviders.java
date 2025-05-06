@@ -3483,8 +3483,8 @@ public class DataProviders implements WMS_GlobalProperties {
 	public static Iterator<Object[]> TC292_P0_E2E_CreateColors_Solid() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
 		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAME);
-		FileInputStream inputStream = new FileInputStream(file);
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("SOLOPLM");
