@@ -2,7 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
-			<item value="C:\Users\311610\OneDrive - Cognizant\Desktop\Automation\WMS_Henderson"/>
+			<item value="C:\Users\2329277\eclipse-workspace"/>
+			<item value="C:\Users\2329277\eclipse-workspace\FlexPLM Updated"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

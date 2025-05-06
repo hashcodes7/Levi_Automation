@@ -1,0 +1,47 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="P3Testcases_Suite" verbose="1">
+	<listeners>
+		<listener class-name="com.customize.ExtentSparklister" />
+	</listeners>
+	<test name="P3_TC">
+		<groups>
+			<run>
+				<include name="P3_TC"></include>
+			</run>
+		</groups>
+		<classes>
+
+			<class name="CreateMultiple_TestData.TC_P3_ActivateMultipleColorway_LSE" />
+			<class name="CreateMultiple_TestData.TC_P3_CreateMultipleColor_PrintsAndPatterns_VerifyStagingRowId" />
+			<class name="CreateMultiple_TestData.TC_P3_CreateMultipleColorway_CheckLogEntry" />
+			<class name="CreateMultiple_TestData.TC_P3_CreateMultipleColorway_VerifyStagingRowId" />
+			<class name="CreateMultiple_TestData.TC_P3_CreateMultipleColorwaySeason_CheckLogEntry" />
+			<class name="CreateMultiple_TestData.TC_P3_CreateMultipleProduct_Colorway_SetUpLSE" />
+			<class name="CreateMultiple_TestData.TC_P3_CreateMultipleSeason_CheckLogEntry" />
+			<class name="CreateMultiple_TestData.TC_P3_PDS_UpdateMultipleMassUpdate_CostwiseView_LogEntry2" />
+			<class name="CreateMultiple_TestData.TC_P3_SearchMultipleData_BomAPP_AllAttributes" />
+			<class name="CreateMultiple_TestData.TC_P3_UpdateMultipleColorway_RigidIndicator" />
+			<class name="CreateMultiple_TestData.TC_P3_UpdateMultipleMassUpdate_CostwiseView_LogEntry" />
+			<class name="CreateMultiple_TestData.TC_P3_UpdateMultipleSourcingValue_CheckLogEntry" />
+			<class name="CreateMultiple_TestData.TC_P3_CreateMultipleFabricTypeMaterial_CheckLogEntry" />
+			<class name="CreateMultiple_TestData.TC_P3_CreateMultipleMaleProduct_ValidateUniqueProductCode" />
+			<class name="CreateMultiple_TestData.TC_P3_CreateMultipleProduct_CheckLogEntry" />
+			<class name="CreateMultiple_TestData.TC_P3_Multiple_Check_MeasurementType" />
+			<class name="CreateMultiple_TestData.TC_P3_Multiple_UpdateSeasonGroupColorway_CheckLogEntry" />
+			<class name="CreateMultiple_TestData.TC_P3_CreateMultipleFemaleProduct_ValidateUniqueProductCode" />
+			<class name="CreateMultiple_TestData.TC_P3_CreateMultipleMaterialSupplier_CheckLogEntry" />
+			<class name="CreateMultiple_TestData.TC_P3_Multiple_VerifyCodeSequencePC9" />
+			<class name="CreateMultiple_TestData.TC_P3_CreateMultipleFabricTypeMaterial_VerifyStagingRowID" />
+			<class name="CreateMultiple_TestData.TC_P3_CreateMultiplePC9ForFemaleAcc_CheckPC9Code" />
+			<class name="CreateMultiple_TestData.TC_P3_CreateMultiplePC9ForMaleAcc_CheckPC9Code" />
+			<class name="CreateMultiple_TestData.TC_P3_CreateMultipleProduct_VerifyStagingRowID" />
+			<class name="CreateMultiple_TestData.TC_P3_CreateMultipleSeasonGroupToSKULink_VerifyStagingRowID" />
+			<class name="CreateMultiple_TestData.TC_P3_BOMAPP_Multiple_VerifyDataSyncFromFlexPLM" />
+			<class name="CreateMultiple_TestData.TC_P3_BOMAPP_Multiple_Ability_to_search_partial_entry" />
+			<class name="CreateMultiple_TestData.TC_P3_BOMAPP_Multiple_ADD_Replace_Material" />
+			<class name="CreateMultiple_TestData.TC_P3_BOMAPP_Multiple_Mass_update_BOM_details" />
+
+
+		</classes>
+	</test>
+</suite>

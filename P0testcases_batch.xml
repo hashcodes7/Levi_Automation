@@ -1,0 +1,100 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="P0Testcases_Suite" verbose="1">
+	<listeners>
+		<listener class-name="com.customize.ExtentSparklister" />
+	</listeners>
+
+	<test name="P0_TC">
+		<groups>
+			<run>
+				<include name="P0_TC"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="P0_TestCases.TC_001_VPColor_Material_Update" />
+			<class name="P0_TestCases.TC_02_vendor_Master_Update" />
+			<class name="P0_TestCases.TC01_P0_Adoption_Product_Colorway_Creation" />
+			<class name="P0_TestCases.TC01_P0_Adoption_Status_Changes" />
+			<class name="P0_TestCases.TC01_P0_Create_Levis_Male_Accessories_Season" />
+			<class name="P0_TestCases.TC01_P0_Creation_Of_Size_Dimension_In_Library" />
+			<class name="P0_TestCases.TC01_P0_Linesheet_ValidateFilters_Merch" />
+			<class name="P0_TestCases.TC01_P0_Material_CreateNewFabricRecords" />
+			<class name="P0_TestCases.TC01_P0_Palette_CreateColor" />
+			<class name="P0_TestCases.TC01_P0_Palette_CreateNewFilter" />
+			<class name="P0_TestCases.TC01_P0_Product_CreateNewProduct" />
+			<class name="P0_TestCases.TC01_P0_Season_SeasonalGroupsValidations_Male" />
+			<class name="P0_TestCases.TC01_P0_Sourcing_PrimarySourceCreation" />
+			<class name="P0_TestCases.TC01_P0_TechPack_PDView" />
+			<class name="P0_TestCases.TC01_P0_Validate_ProductSegmentationLSE" />
+			<class name="P0_TestCases.TC01_P0_Views_ValidateLinesheet_Adoption" />
+			<class name="P0_TestCases.TC02_P0_AdoptionLH" />
+			<class name="P0_TestCases.TC02_P0_Create_PrintsAndPatterns_color" />
+			<class name="P0_TestCases.TC02_P0_Creation_Of_Size_Scale_In_Library" />
+			<class name="P0_TestCases.TC02_P0_Material_SetFabricContentAndVerifySorting" />
+			<class name="P0_TestCases.TC02_P0_Measurements_CreateTemplate" />
+			<class name="P0_TestCases.TC02_P0_Placements_Results_BlankSeason" />
+			<class name="P0_TestCases.TC02_P0_TechPack_GarmentView" />
+			<class name="P0_TestCases.TC02_P0_Validate_ProductSegmentationLSUS" />
+			<class name="P0_TestCases.TC02_P0_ValidateSeasonGroupAssociationSearchResults" />
+			<class name="P0_TestCases.TC02_P0_Views_ValidateLinesheet_FLA_finalizeDetails" />
+			<class name="P0_TestCases.TC03_P0_AdoptionAFF" />
+			<class name="P0_TestCases.TC03_P0_Creation_Of_Size_Grid_In_Library" />
+			<class name="P0_TestCases.TC03_P0_Measurements_Create_POM" />
+			<class name="P0_TestCases.TC03_P0_Placements_Results_Blank_Brand" />
+			<class name="P0_TestCases.TC03_P0_Sourcing_UpdateSourceConfig" />
+			<class name="P0_TestCases.TC03_P0_UpdateMaterialrecord" />
+			<class name="P0_TestCases.TC03_P0_Validate_ProfitCenter_Creation" />
+			<class name="P0_TestCases.TC04_P0_Create_Levis_Female_Bottoms_Season" />
+			<class name="P0_TestCases.TC04_P0_Create_PC9" />
+			<class name="P0_TestCases.TC04_P0_SCL_Create_seasonalBFFcolor" />
+			<class name="P0_TestCases.TC04_P0_SCL_seasonalBFFColor_ERROR" />
+			<class name="P0_TestCases.TC04_P0_SCL_UpdateColorLookName" />
+			<class name="P0_TestCases.TC04_P0_Season_SeasonalGroupsValidations_Female" />
+			<class name="P0_TestCases.TC05_P0_TechPack_DownloadBOMTechpack" />
+			<class name="P0_TestCases.TC05_P0_VerifyColorwayAndMarketingNames" />
+			<class name="P0_TestCases.TC06_P0_ColorwayAndProductMarketingDerivation" />
+			<class name="P0_TestCases.TC06_P0_Download_TechpackOnly_File" />
+			<class name="P0_TestCases.TC06_P0_ValidateSeasonGroupAssociationSearchResults" />
+			<class name="P0_TestCases.TC07_P0_Create_Levis_Male_Tops_Palette" />
+			<class name="P0_TestCases.TC07_P0_Linesheet_ValidateFilters_FLA" />
+			<class name="P0_TestCases.TC08_P0_Product_Verify_Style_Type_Derivation" />
+			<class name="P0_TestCases.TC10_P0_CL_Placement_Part1" />
+			<class name="P0_TestCases.TC10_P0_CL_Placement_Part2" />
+			<class name="P0_TestCases.TC10_P0_CreateMeasureSet_UsingTemplate" />
+			<class name="P0_TestCases.TC10_P0_Material_CreateFinishRecordsTest" />
+			<class name="P0_TestCases.TC11_P0_CL_CreateBulkColorway" />
+			<class name="P0_TestCases.TC11_P0_Measurements_CreateSet_NonMeasurementAdmin" />
+			<class name="P0_TestCases.TC14_P0_Linesheet_ValidateFilters_techpack" />
+			<class name="P0_TestCases.TC14_P0_Validate_ProductDevCenter" />
+			<class name="P0_TestCases.TC15_P0_GD_Generate_TP_BOMOnly" />
+			<class name="P0_TestCases.TC15_P0_VerifyPC9CodeCreation" />
+			<class name="P0_TestCases.TC16_P0_Validate_ProfitCenter_EUROPE" />
+			<class name="P0_TestCases.TC16_P0_VerifySourceAddingAndRemovingFunctionality" />
+			<class name="P0_TestCases.TC17_P0_CopyProduct" />
+			<class name="P0_TestCases.TC17_P0_SetUpLSE" />
+			<class name="P0_TestCases.TC17_P0_Techpack_GenerateBOMOnly_MultipleColorway_SingleSource" />
+			<class name="P0_TestCases.TC18_P0_SetUpLSUS" />
+			<class name="P0_TestCases.TC19_P0_PrimarySource_Specifications" />
+			<class name="P0_TestCases.TC19_P0_Update_PC_LSUS" />
+			<class name="P0_TestCases.TC20_P0_Material_CreateSundryMaterial" />
+			<class name="P0_TestCases.TC21_P0_CopyExistingColorway" />
+			<class name="P0_TestCases.TC21_P0_Material_UpdateSundryMaterial" />
+			<class name="P0_TestCases.TC25_P0_RemoveSourcefromSeason" />
+			<class name="P0_TestCases.TC30_P0_ADD_POMtoMeasurementTable" />
+			<class name="P0_TestCases.TC32_P0_SCL_UpdateSeasonalColorLookName" />
+			<class name="P0_TestCases.TC34_P0_Specifications_CarryoverAttributes" />
+			<class name="P0_TestCases.TC36_P0_Placements_UpdatingMultiplePlacementValue" />
+			<class name="P0_TestCases.TC38_P0_CreateSundryColorway" />
+			<class name="P0_TestCases.TC39_P0_UpdateSundryColorway" />
+			<class name="P0_TestCases.TC42_P0_Initiate_FitBlock_Sample_Request" />
+			<class name="P0_TestCases.TC49_P0_CreateMultipleMesurementSet" />
+			<class name="P0_TestCases.TC59_P0_Linesheet_CreateNewFilter" />
+			<class name="P0_TestCases.TC60_P0_Linesheet_UpdateFilter" />
+			<class name="P0_TestCases.TC61_P0_Linesheet_CopyFilter" />
+			<class name="P0_TestCases.TC62_P0_Linesheet_ShareFilter" />
+			<class name="P0_TestCases.TC63_P0_Linesheet_DeleteFilter" />
+			<class name="P0_TestCases.TC66_P0_ColorwayAndProductMarketingDerivation" />
+
+		</classes>
+	</test>
+</suite>

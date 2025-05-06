@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ColorSuite" parallel="tests" thread-count="3">
+
+  
+   <test name="Color_Scenarios1">
+    <classes>
+      <class name="P1_Testcases.TC24_P1_Verify_updatePC9_thumbnail"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="Color_Scenarios2">
+    <classes>
+      <class name="P1_Testcases.TC33_P1_Verify_ReuseSeasonalLook_updatePC9"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
