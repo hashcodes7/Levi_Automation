@@ -158,9 +158,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
   <artifactId>maven-surefire-plugin</artifactId>
   <version>3.1.0</version>
   <configuration>
-    <suiteXmlFiles>
-      <suiteXmlFile>${BatchFile}</suiteXmlFile>
-    </suiteXmlFiles>
     <testFailureIgnore>true</testFailureIgnore>
     <forkCount>1</forkCount>
     <reuseForks>true</reuseForks>
