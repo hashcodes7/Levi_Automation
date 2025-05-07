@@ -57,7 +57,7 @@ public class WMS_TestBase implements WMS_GlobalProperties {
     // Create reports folder if it doesn't exist
     String reportsDir = System.getProperty("user.dir") + File.separator + "Reports";
     new File(reportsDir).mkdirs(); // Create the folder if it doesn't exist
-    String reportPath = reportsDir + File.separator + ReportName + autoGenSerialNo() + ".html";
+    String reportPath = reportsDir + File.separator + testName + autoGenSerialNo() + ".html";
         	htmlReporter = new ExtentHtmlReporter(reportPath);
             extent = new ExtentReports();
             extent.attachReporter(htmlReporter);
