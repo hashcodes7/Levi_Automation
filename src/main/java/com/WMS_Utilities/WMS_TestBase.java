@@ -52,7 +52,7 @@ public class WMS_TestBase implements WMS_GlobalProperties {
 	//--------------------------------------------------------------------------------------------------
 	public void setReport(String testName) throws InterruptedException {
 		if (extent == null) {
-			    System.out.println("ReportName is : " + ReportName);
+			    System.out.println("ReportName is : " + testName);
     
     // Create reports folder if it doesn't exist
     String reportsDir = System.getProperty("user.dir") + File.separator + "Reports";
