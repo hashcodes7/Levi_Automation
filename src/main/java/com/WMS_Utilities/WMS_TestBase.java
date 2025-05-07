@@ -104,19 +104,17 @@ public class WMS_TestBase implements WMS_GlobalProperties {
 	}
 	
 	
-	public WebDriver invokeBrowser() throws InterruptedException {
-    WebDriverManager.chromedriver().setup(); // <-- This line manages the ChromeDriver
-
+public WebDriver invokeBrowser() throws InterruptedException {
     ChromeOptions options = new ChromeOptions();
-    options.addArguments("--incognito");
-    
-    driver = new ChromeDriver(options); // No need for DesiredCapabilities in latest versions
+    options.addArguments("--no-sandbox");
+    options.addArguments("--disable-dev-shm-usage");
+    options.addArguments("--headless=new");
+    options.addArguments("--disable-gpu");
+    String uniqueUserDataDir = System.getProperty("java.io.tmpdir") + "/chrome-profile-" + UUID.randomUUID();
+    options.addArguments("--user-data-dir=" + uniqueUserDataDir);
+    WebDriverManager.chromedriver().setup(); // Setup first
+    driver = new ChromeDriver(options); // Then instantiate
     driver.manage().window().maximize();
-
-    driver.findElement(By.tagName("html")).sendKeys(Keys.chord(Keys.CONTROL, "50"));
-    System.out.println("get browser size  -- Keys.CONTROL,\"80\"");
-    System.out.println("get browser size  -- Keys.CONTROL,\"0\"");
-
     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     return driver;
 }
