@@ -98,6 +98,6 @@ jobs:
           ENCODED_REPORT_NAME=$(printf "%s" "$REPORT_NAME" | jq -sRr @uri)
           echo "Final Report Name: $REPORT_NAME"
           echo "Encoded Report Name: $ENCODED_REPORT_NAME"
-          echo "🔗 Live Report URL: https://hashcodes7.github.io/WMS_Automation/Reports/$ENCODED_REPORT_NAME"
+          echo "🔗 Live Report URL: https://hashcodes7.github.io/Levi_Automation/Reports/$ENCODED_REPORT_NAME"
           echo "REPORT_PATH=$REPORT_PATH" >> $GITHUB_OUTPUT
           echo "ENCODED_REPORT_NAME=$ENCODED_REPORT_NAME" >> $GITHUB_OUTPUT
