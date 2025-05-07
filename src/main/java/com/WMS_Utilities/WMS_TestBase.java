@@ -105,37 +105,21 @@ public class WMS_TestBase implements WMS_GlobalProperties {
 	
 	
 	public WebDriver invokeBrowser() throws InterruptedException {
+    WebDriverManager.chromedriver().setup(); // <-- This line manages the ChromeDriver
 
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--incognito");
-		DesiredCapabilities capability = DesiredCapabilities.chrome();
-		capability.setCapability(ChromeOptions.CAPABILITY, options);
-		System.setProperty(CHROME_KEY, CHROME_PATH);
-		// WebDriverManager.chromedriver().setup();
-		// String CHROME_KEY="webdriver.chrome.driver";
-		// String CHROME_PATH="C:\\Sandip\\chromedriver-win64\\chromedriver.exe";
-		// System.setProperty("webdriver.chrome.driver","C:\\Sandip\\chromedriver-win64\\chromedriver.exe");
-		driver = new ChromeDriver(options);
-		driver.manage().window().maximize();
+    ChromeOptions options = new ChromeOptions();
+    options.addArguments("--incognito");
+    
+    driver = new ChromeDriver(options); // No need for DesiredCapabilities in latest versions
+    driver.manage().window().maximize();
 
-		driver.findElement(By.tagName("html")).sendKeys(Keys.chord(Keys.CONTROL, "50"));
-		System.out.println("get browser size  -- Keys.CONTROL,\"80\"");
-		// driver.findElement(By.tagName("html")).sendKeys(Keys.chord(Keys.CONTROL,"0"));
-		System.out.println("get browser size  -- Keys.CONTROL,\"0\"");
-		/*
-		 * for(int i=0; i<5; i++){
-		 * driver.findElement(By.tagName("html")).sendKeys(Keys.chord(Keys.CONTROL,"80")
-		 * ); }
-		 */
-		/*
-		 * JavascriptExecutor js = (JavascriptExecutor) driver;
-		 * js.executeScript("document.body.style.transform='scale(0.4)';");
-		 * System.out.println("get browser size  -- Keys.CONTROL,\"0\"" );
-		 */
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		return driver;
+    driver.findElement(By.tagName("html")).sendKeys(Keys.chord(Keys.CONTROL, "50"));
+    System.out.println("get browser size  -- Keys.CONTROL,\"80\"");
+    System.out.println("get browser size  -- Keys.CONTROL,\"0\"");
 
-	}
+    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+    return driver;
+}
 
 	public void launchUrl() {
 
