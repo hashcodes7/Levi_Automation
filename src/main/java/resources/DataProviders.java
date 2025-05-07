@@ -34,9 +34,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "WMS_PAST_Gift_Card")
 	public static Iterator<Object[]> WMS_PAST_Gift_Card() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("PackWrap");
@@ -104,9 +104,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "Ship_Confirmation")
 	public static Iterator<Object[]> Ship_Confirmation() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("Ship_Con");
@@ -358,9 +358,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "SinglesBagOrder_Cartoon")
 	public static Iterator<Object[]> SingleBagGC() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("SinBagGc");
@@ -397,9 +397,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "SinglesBagOrder_PackStation_One")
 	public static Iterator<Object[]> SingleBagOne() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("SinBag_1");
@@ -436,9 +436,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "SinglesBagOrder_PackStation_Two")
 	public static Iterator<Object[]> SingleBagPakTwo() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("SinBag_2");
@@ -475,9 +475,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "SinglesBagOrder_PackStation_Three")
 	public static Iterator<Object[]> SinglesBagPackThree() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("SinBag_3");
@@ -514,9 +514,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "SinglegiftCard")
 	public static Iterator<Object[]> singlegiftCard() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("SingGifCard");
@@ -553,9 +553,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "SingleWrap")
 	public static Iterator<Object[]> singlesWrap() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("SingWGP");
@@ -592,9 +592,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "SingleExport")
 	public static Iterator<Object[]> singlesExport() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("SingExp");
@@ -669,9 +669,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "MultiBag_GC")
 	public static Iterator<Object[]> Multibags_2() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("MBag_GC");
@@ -709,9 +709,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "WMS_MultiBag_GiftCard")
 	public static Iterator<Object[]> Multibags_GiftCard() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("MBag_GiftCard");
@@ -749,9 +749,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "MultiGift_2Units")
 	public static Iterator<Object[]> MultiGift_2() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("M_Gift_2");
@@ -826,9 +826,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "WMS_Multi_Gift_Wrap")
 	public static Iterator<Object[]> Multis_GiftWrap() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("MBag_GiftWrap");
@@ -868,9 +868,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "WMS_Multis_Export")
 	public static Iterator<Object[]> Multis_Export() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("MBag_Export");
@@ -1106,9 +1106,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "PickShort_Singles_bag")
 	public static Iterator<Object[]> picksortSB() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("Pick_SB");
@@ -1145,9 +1145,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "PickShort_Singles_Carton")
 	public static Iterator<Object[]> picksortSingleCarton() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("Pick_SC");
@@ -1184,9 +1184,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "PickShort_Singles_Gift_Card")
 	public static Iterator<Object[]> singleGiftCard_pick_Short() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("Pick_SGC");
@@ -1223,9 +1223,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "Cancel_Olpns")
 	public static Iterator<Object[]> Cancel_Olpns() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("Can_Olpn");
@@ -1246,9 +1246,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "WMS_Cancel_Order")
 	public static Iterator<Object[]> WMS_Cancel_Order1() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("Can_Ord");
@@ -1268,9 +1268,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "PackShorts_SingleBag_Cartons")
 	public static Iterator<Object[]> singleBag_Cartons_PackShort() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("Pack_SCP");
@@ -1306,9 +1306,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "PackShorts_Singles_bags")
 	public static Iterator<Object[]> singles_bag_PackShort() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("Pack_SBP");
@@ -1344,9 +1344,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "ParcelEnd_of_TheDay")
 	public static Iterator<Object[]> ParcelEnd() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("Par_EOD");
@@ -1367,9 +1367,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "Fill_And_Kill_Wave")
 	public static Iterator<Object[]> fill_and_kill() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("Fill_Kill");
@@ -1444,9 +1444,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "PackShorts_Single_Export")
 	public static Iterator<Object[]> singles_Export_PackShort() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("Pack_SEP");
@@ -1482,9 +1482,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "Printing_Journal")
 	public static Iterator<Object[]> printing_Journal() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("P-Jour");
@@ -1655,9 +1655,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "PickSort_MultiBag_Corton")
 	public static Iterator<Object[]> PickSort_MultiBag_Corton() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("Pick_MB_Corton");
@@ -1695,9 +1695,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "PickShort_Multis_Export")
 	public static Iterator<Object[]> PickShort_Multis_Export() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("Pick_MExport");
@@ -1802,9 +1802,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "Alternate_Pick_Location")
 	public static Iterator<Object[]> Alternate_Pick_Location() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("Pick_AltLoca");
@@ -2065,9 +2065,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "PickShort_Singles_Gift_Wrap")
 	public static Iterator<Object[]> singleGift_Wrap_pick_Short() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("Pick_SGW");
@@ -2104,9 +2104,9 @@ public class DataProviders implements WMS_GlobalProperties {
 	@DataProvider(name = "PickSort_MultiBag_Corton_2slot")
 	public static Iterator<Object[]> PickSort_MultiBag_Corton_2slot() throws InvalidFormatException, IOException {
 		ArrayList<Object[]> myData = new ArrayList<Object[]>();
-		String filePath = System.getProperty("user.dir") + FILEPATH;
-		File file = new File(filePath + "\\" + FILENAMESECOUND);
-		FileInputStream inputStream = new FileInputStream(file);
+
+		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "PLM_TestData.xlsx");
+    FileInputStream inputStream = new FileInputStream(filePath.toFile());
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheet("Pick_MB_Corton_2slot");
