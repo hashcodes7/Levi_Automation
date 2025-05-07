@@ -52,9 +52,13 @@ public class WMS_TestBase implements WMS_GlobalProperties {
 	//--------------------------------------------------------------------------------------------------
 	public void setReport(String testName) throws InterruptedException {
 		if (extent == null) {
-            // Create the report file only once
-        	htmlReporter = new ExtentHtmlReporter(
-        			System.getProperty("user.dir") + "\\Reports\\" + testName + autoGenSerialNo() + ".html");
+			    System.out.println("ReportName is : " + ReportName);
+    
+    // Create reports folder if it doesn't exist
+    String reportsDir = System.getProperty("user.dir") + File.separator + "Reports";
+    new File(reportsDir).mkdirs(); // Create the folder if it doesn't exist
+    String reportPath = reportsDir + File.separator + ReportName + autoGenSerialNo() + ".html";
+        	htmlReporter = new ExtentHtmlReporter(reportPath);
             extent = new ExtentReports();
             extent.attachReporter(htmlReporter);
         	htmlReporter.config().setDocumentTitle("PLM Automation");
