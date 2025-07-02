@@ -168,7 +168,7 @@ public class ST_TC31_Create_Product extends WMS_TestBase{
 				addScreenShot("Clicked on save button successfully", test, Capture);
 				WaitforPage(2000);
 
-
+					
 				dashboardPage.headerDropdownSearch("Product", "Demo_Product_aug06");
 				// Verify product name
 				String product_Name = productPage.getProductName();

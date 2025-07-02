@@ -101,7 +101,7 @@ public class WMS_TestBase implements WMS_GlobalProperties {
 	
 	public String autoGenSerialNo() throws InterruptedException {
 		WaitforPage(4000);
-		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddmmSSSSddSSSS");
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
 		LocalDateTime now = LocalDateTime.now();
 		String SerialNo = dtf.format(now).toString() + "0";
 		System.out.println("Test case Number is : " + SerialNo);
