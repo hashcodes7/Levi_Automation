@@ -339,7 +339,7 @@ public class WMS_WebDriverUtilities extends WMS_TestBase {
 	    String screenshotDir = System.getProperty("user.dir") + File.separator + "Failed_Screenshots";
 	    new File(screenshotDir).mkdirs(); // Create folder if it doesn't exist
 
-	    String screenshotPath = screenshotDir + File.separator + screenShotName + "_" + dateStamp + ".png";
+	    String screenshotPath = screenshotDir + File.separator + "screenshot" + "_" + dateStamp + ".png";
 
 	    File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 	    File finalDest = new File(screenshotPath);
