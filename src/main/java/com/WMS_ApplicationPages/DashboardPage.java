@@ -139,26 +139,51 @@ saveButton.click();
 	}
 	public void sendInputToTextField(WebElement element, String enterText, String elementName) throws Exception {
 	    System.out.println("📩 Sending input to: " + elementName);
-	    Thread.sleep(500);
-	    try {
-	        element.clear();
-	        String wrappedText = "*" + enterText + "*";
-	        element.sendKeys(wrappedText);
-	        Thread.sleep(1000);
-	        element.sendKeys(Keys.ENTER);
-			driver.switchTo().defaultContent();
-			driver.switchTo().frame(iframeContentframe);
-			WebElement h1 = driver.findElement(By.tagName("h1"));
-			if (h1.getText().contains("Internal Server Error")) {
-			    System.out.println("Detected 500 Internal Server Error via <h1>");
-			}	Thread.sleep(1000);
-			element.sendKeys(Keys.ENTER);
-	    } catch (Exception e) {
-	        String message = "Text entry for " + elementName + " was unsuccessful ❌";
-	        throw new Exception(message);
+
+	    int maxRetries = 2;
+	    for (int attempt = 1; attempt <= maxRetries; attempt++) {
+	        try {
+	            Thread.sleep(500);
+	            element.clear();
+
+	            String wrappedText = "*" + enterText + "*";
+	            element.sendKeys(wrappedText);
+	            Thread.sleep(1000);
+	            element.sendKeys(Keys.ENTER);
+
+	            // Wait for response and check for error UI
+	            Thread.sleep(2000);
+
+	            if (isInternalServerErrorVisible()) {
+	                System.out.println("⚠️ Internal Server Error detected after input attempt #" + attempt);
+	                if (attempt == maxRetries) {
+	                    throw new Exception("Failed to send input to " + elementName + " after " + maxRetries + " attempts ❌");
+	                }
+	                System.out.println("🔁 Retrying input for " + elementName);
+	                continue; // Retry
+	            }
+
+	            // Success path
+	            System.out.println("✅ Input sent successfully to " + elementName);
+	            break;
+
+	        } catch (Exception e) {
+	            if (attempt == maxRetries) {
+	                throw new Exception("Text entry for " + elementName + " was unsuccessful ❌ — " + e.getMessage());
+	            }
+	            System.out.println("🔁 Retrying due to exception: " + e.getMessage());
+	        }
 	    }
 	}
 
+	public boolean isInternalServerErrorVisible() {
+	    try {
+	        WebElement errorBanner = driver.findElement(By.xpath("//*[contains(text(),'500 Internal Server Error')]"));
+	        return errorBanner.isDisplayed();
+	    } catch (Exception e) {
+	        return false;
+	    }
+	}
 	
 	public void listElementsInFrame() {
 	        driver.switchTo().defaultContent();
