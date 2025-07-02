@@ -64,9 +64,7 @@ jobs:
 
       - name: 🧪 Run TestNG (batch or single)
         run: |
-          if [[ "${{ github.event.inputs.mode }}" == "batch" ]]; then
-            FILE="Batch_Test_Scripts/${{ github.event.inputs.suite_file_name }}"
-            if [[ ! -f "$FILE" ]]; then
+            if [[ ! -f "Batch_Test_Scripts/${{ github.event.inputs.suite_file_name }}" ]]; then
               echo "❌ Suite file '$FILE' not found!"
               echo "Available files:"
               ls Batch_Test_Scripts/
