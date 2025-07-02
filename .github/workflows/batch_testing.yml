@@ -97,7 +97,7 @@ jobs:
           path: Reports/
           if-no-files-found: warn
 
-      - name: Commit HTML report to repository
+ - name: Commit HTML report to repository
         if: success()
         run: |
           git config user.name "github-actions"
@@ -106,7 +106,9 @@ jobs:
           git add Reports/*.html
           git commit -m "Add test report [skip ci]" || echo "No changes to commit"
           git push origin main
-
+      - name: Wait briefly after commit
+      - run: sleep 5
+      
       - name: Wait for GitHub Pages Deployment
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -122,28 +124,25 @@ jobs:
                 echo "✅ Pages deployment successful!"
                 break
               else
-                echo "❌ Pages deployment failed!"
+                echo "❌ Pages de\ployment failed!"
                 exit 1
               fi
             fi
             echo "⏳ Waiting..."
             sleep 10
           done
-
       - name: Print Report Link
+        id: print
         run: |
-          REPORT_PATH=$(find Reports -name "*.html" -type f -exec stat --format='%Y %n' {} \; | sort -n | tail -n 1 | cut -d' ' -f2-)
-          REPORT_NAME=$(basename "$REPORT_PATH" | sed -E 's/\.html.*/.html/')
-          ENCODED_REPORT_NAME=$(printf "%s" "$REPORT_NAME" | jq -sRr @uri)
-          echo "Final Report Name: $REPORT_NAME"
-          echo "Encoded Report Name: $ENCODED_REPORT_NAME"
-          echo "live_report_url=https://hashcodes7.github.io/Levi_Automation/Reports/$ENCODED_REPORT_NAME" >> $GITHUB_ENV
+            REPORT_PATH=$(find Reports -name "[0-9]*.html" | sort | tail -n 1)
+            REPORT_NAME=$(basename "$REPORT_PATH")
+            FINAL_URL="https://hashcodes7.github.io/Levi_Automation/Reports/$REPORT_NAME"
 
-      - name: Find Latest Report
-        id: report_path
-        run: |
-          LATEST_REPORT=$(find Reports -name "*.html" -type f -exec stat --format='%Y %n' {} \; | sort -n | tail -n 1 | cut -d' ' -f2-)
-          echo "latest_report=$LATEST_REPORT" >> $GITHUB_OUTPUT
+            echo "Final Report Name: $REPORT_NAME"
+            echo "🔗 Clickable Report URL: $FINAL_URL"
+            echo "live_report_url=$FINAL_URL" >> $GITHUB_ENV
+            echo "latest_report=$REPORT_PATH" >> $GITHUB_OUTPUT
+
 
       - name: Set email flag
         run: |
