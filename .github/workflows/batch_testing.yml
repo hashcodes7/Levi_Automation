@@ -12,17 +12,6 @@ on:
           - dev
           - qa
           - staging
-      mode:
-        description: 'Select run mode:'
-        required: true
-        default: 'batch'
-        type: choice
-        options:
-          - batch
-          - single
-      test_class:
-        description: 'Full test class name (used only in single mode)'
-        required: false
       suite_file_name:
         description: 'Name of the test suite XML file (used in batch mode). Example: testingbatch.xml'
         required: false
