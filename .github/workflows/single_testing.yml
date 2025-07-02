@@ -96,13 +96,14 @@ jobs:
       - name: Print Report Link
         id: print
         run: |
-          REPORT_PATH=$(find Reports -name "*.html" | sort | tail -n 1)
-          REPORT_NAME=$(basename "$REPORT_PATH")
-          ENCODED_REPORT_NAME=$(printf "%s" "$REPORT_NAME" | jq -sRr @uri)
-          echo "Final Report Name: $REPORT_NAME"
-          echo "Encoded Report Name: $ENCODED_REPORT_NAME"
-          echo "live_report_url=https://hashcodes7.github.io/Levi_Automation/Reports/$ENCODED_REPORT_NAME" >> $GITHUB_ENV
-          echo "latest_report=$REPORT_PATH" >> $GITHUB_OUTPUT
+            REPORT_PATH=$(find Reports -name "[0-9]*.html" | sort | tail -n 1)
+            REPORT_NAME=$(basename "$REPORT_PATH")
+            FINAL_URL="https://hashcodes7.github.io/Levi_Automation/Reports/$REPORT_NAME"
+
+            echo "Final Report Name: $REPORT_NAME"
+            echo "🔗 Clickable Report URL: $FINAL_URL"
+            echo "live_report_url=$FINAL_URL" >> $GITHUB_ENV
+            echo "latest_report=$REPORT_PATH" >> $GITHUB_OUTPUT
 
       - name: Set email flag
         run: |
