@@ -2,46 +2,98 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-02T08:18:15 IST" name="Default suite" finished-at="2025-07-02T08:19:46 IST" duration-ms="91661">
+  <suite started-at="2025-07-02T09:11:02 IST" name="Default suite" finished-at="2025-07-02T09:12:04 IST" duration-ms="61555">
     <groups>
       <group name="E2E_TC">
-        <method signature="QuickSearchTest.searchFlexPLMObject()[pri:0, instance:smoketests.QuickSearchTest@66ea810]" name="searchFlexPLMObject" class="smoketests.QuickSearchTest"/>
+        <method signature="ST_TC11_Create_Color.ST_TC11_Create_Color_(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:smoketests.ST_TC11_Create_Color@66ea810]" name="ST_TC11_Create_Color_" class="smoketests.ST_TC11_Create_Color"/>
       </group> <!-- E2E_TC -->
     </groups>
-    <test started-at="2025-07-02T08:18:15 IST" name="Default test" finished-at="2025-07-02T08:19:46 IST" duration-ms="91661">
-      <class name="smoketests.QuickSearchTest">
-        <test-method is-config="true" signature="CreateSummary()[pri:0, instance:smoketests.QuickSearchTest@66ea810]" started-at="2025-07-02T08:18:15 IST" name="CreateSummary" finished-at="2025-07-02T08:18:15 IST" duration-ms="15" status="PASS">
+    <test started-at="2025-07-02T09:11:02 IST" name="Default test" finished-at="2025-07-02T09:12:04 IST" duration-ms="61555">
+      <class name="smoketests.ST_TC11_Create_Color">
+        <test-method is-config="true" signature="CreateSummary()[pri:0, instance:smoketests.ST_TC11_Create_Color@66ea810]" started-at="2025-07-02T09:11:02 IST" name="CreateSummary" finished-at="2025-07-02T09:11:02 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateSummary -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:smoketests.QuickSearchTest@66ea810]" started-at="2025-07-02T08:18:15 IST" name="setUp" finished-at="2025-07-02T08:18:36 IST" duration-ms="21297" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:smoketests.ST_TC11_Create_Color@66ea810]" started-at="2025-07-02T09:11:04 IST" name="setUp" finished-at="2025-07-02T09:11:25 IST" duration-ms="21484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchFlexPLMObject()[pri:0, instance:smoketests.QuickSearchTest@66ea810]" started-at="2025-07-02T08:18:36 IST" name="searchFlexPLMObject" finished-at="2025-07-02T08:19:46 IST" duration-ms="69961" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchFlexPLMObject -->
-        <test-method is-config="true" signature="setUpend()[pri:0, instance:smoketests.QuickSearchTest@66ea810]" started-at="2025-07-02T08:19:46 IST" name="setUpend" finished-at="2025-07-02T08:19:46 IST" duration-ms="336" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpend -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:smoketests.QuickSearchTest@66ea810]" started-at="2025-07-02T08:19:46 IST" name="afterMethod" finished-at="2025-07-02T08:19:46 IST" duration-ms="2" status="PASS">
+        <test-method signature="ST_TC11_Create_Color_(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:smoketests.ST_TC11_Create_Color@66ea810]" started-at="2025-07-02T09:11:25 IST" name="ST_TC11_Create_Color_" data-provider="TC292_P0_E2E_CreateColors_Solid" finished-at="2025-07-02T09:12:03 IST" duration-ms="38197" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchFlexPLMObject status=SUCCESS method=QuickSearchTest.searchFlexPLMObject()[pri:0, instance:smoketests.QuickSearchTest@66ea810] output={null}]]]>
+                <![CDATA[TC292_P0_E2E_CreateColors_Solid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Solid Colors]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[150]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[150]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[150]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Tans]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Scotdic]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[111187]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[AutomationTest_05]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Levis_test_05]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ST_TC11_Create_Color_ -->
+        <test-method is-config="true" signature="setUpend()[pri:0, instance:smoketests.ST_TC11_Create_Color@66ea810]" started-at="2025-07-02T09:12:03 IST" name="setUpend" finished-at="2025-07-02T09:12:04 IST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpend -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:smoketests.ST_TC11_Create_Color@66ea810]" started-at="2025-07-02T09:12:04 IST" name="afterMethod" finished-at="2025-07-02T09:12:04 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ST_TC11_Create_Color_ status=SUCCESS method=ST_TC11_Create_Color.ST_TC11_Create_Color_(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:smoketests.ST_TC11_Create_Color@66ea810] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoketests.QuickSearchTest@66ea810]" started-at="2025-07-02T08:19:46 IST" name="tearDown" finished-at="2025-07-02T08:19:47 IST" duration-ms="290" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoketests.ST_TC11_Create_Color@66ea810]" started-at="2025-07-02T09:12:04 IST" name="tearDown" finished-at="2025-07-02T09:12:04 IST" duration-ms="348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- smoketests.QuickSearchTest -->
+      </class> <!-- smoketests.ST_TC11_Create_Color -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

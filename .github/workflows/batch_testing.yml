@@ -39,18 +39,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: 🛒 Checkout repository
         uses: actions/checkout@v3
         with:
           persist-credentials: true
 
-      - name: Set up JDK 11
+      - name: 🔧 Set up JDK 11
         uses: actions/setup-java@v3
         with:
           java-version: '11'
           distribution: 'temurin'
 
-      - name: Cache Maven dependencies
+      - name: 📦 Cache Maven dependencies
         uses: actions/cache@v3
         with:
           path: ~/.m2/repository
@@ -58,7 +58,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
-      - name: Set CurrentURL based on environment
+      - name: 🌐 Set CurrentURL based on environment
         id: seturl
         run: |
           case "${{ github.event.inputs.environment }}" in
@@ -73,7 +73,7 @@ jobs:
               ;;
           esac
 
-      - name: Run TestNG (batch or single)
+      - name: 🧪 Run TestNG (batch or single)
         run: |
           if [[ "${{ github.event.inputs.mode }}" == "batch" ]]; then
             FILE="Batch_Test_Scripts/${{ github.event.inputs.suite_file_name }}"
@@ -88,22 +88,22 @@ jobs:
           else
             echo "✅ Running single test class: ${{ github.event.inputs.test_class }}"
             mvn -DCurrentURL="${{ steps.seturl.outputs.url }}" -Dtest=${{ github.event.inputs.test_class }} test
-          fi
 
-      - name: Upload HTML Report
+      - name: ⬆️ Upload HTML Report
         uses: actions/upload-artifact@v4
         with:
           name: ExtentReport
           path: Reports/
           if-no-files-found: warn
-      - name: Upload Screenshots
+
+      - name: ⬆️ Upload Screenshots
         uses: actions/upload-artifact@v4
         with:
           name: TestScreenshots
           path: Failed_Screenshots/
           if-no-files-found: warn
 
- - name: Commit HTML report to repository
+      - name: 📥 Commit HTML report to repository
         if: success()
         run: |
           git config user.name "github-actions"
@@ -112,10 +112,11 @@ jobs:
           git add Reports/*.html
           git commit -m "Add test report [skip ci]" || echo "No changes to commit"
           git push origin main
-      - name: Wait briefly after commit
-      - run: sleep 5
-      
-      - name: Wait for GitHub Pages Deployment
+
+      - name: ⏳ Wait briefly after commit
+        run: sleep 5
+
+      - name: 🕸️ Wait for GitHub Pages Deployment
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -130,27 +131,27 @@ jobs:
                 echo "✅ Pages deployment successful!"
                 break
               else
-                echo "❌ Pages de\ployment failed!"
+                echo "❌ Pages deployment failed!"
                 exit 1
               fi
             fi
             echo "⏳ Waiting..."
             sleep 10
           done
-      - name: Print Report Link
+
+      - name: 🔗 Print Report Link
         id: print
         run: |
-            REPORT_PATH=$(find Reports -name "[0-9]*.html" | sort | tail -n 1)
-            REPORT_NAME=$(basename "$REPORT_PATH")
-            FINAL_URL="https://hashcodes7.github.io/Levi_Automation/Reports/$REPORT_NAME"
+          REPORT_PATH=$(find Reports -name "[0-9]*.html" | sort | tail -n 1)
+          REPORT_NAME=$(basename "$REPORT_PATH")
+          FINAL_URL="https://hashcodes7.github.io/Levi_Automation/Reports/$REPORT_NAME"
 
-            echo "Final Report Name: $REPORT_NAME"
-            echo "🔗 Clickable Report URL: $FINAL_URL"
-            echo "live_report_url=$FINAL_URL" >> $GITHUB_ENV
-            echo "latest_report=$REPORT_PATH" >> $GITHUB_OUTPUT
+          echo "Final Report Name: $REPORT_NAME"
+          echo "🔗 Clickable Report URL: $FINAL_URL"
+          echo "live_report_url=$FINAL_URL" >> $GITHUB_ENV
+          echo "latest_report=$REPORT_PATH" >> $GITHUB_OUTPUT
 
-
-      - name: Set email flag
+      - name: 📬 Set email flag
         run: |
           if [[ -n "${{ github.event.inputs.email_addresses }}" ]]; then
             echo "send_email=true" >> $GITHUB_ENV
@@ -158,7 +159,7 @@ jobs:
             echo "send_email=false" >> $GITHUB_ENV
           fi
 
-      - name: Send Email with Test Report (with attachment)
+      - name: ✉️ Send Email with Test Report (with attachment)
         if: env.send_email == 'true'
         uses: dawidd6/action-send-mail@v3
         with:
@@ -178,4 +179,4 @@ jobs:
             GitHub Actions
           to: ${{ github.event.inputs.email_addresses }}
           from: GitHub Actions <${{ secrets.EMAIL_USERNAME }}>
-          attachments: ${{ steps.report_path.outputs.latest_report }}
+          attachments: ${{ steps.print.outputs.latest_report }}
