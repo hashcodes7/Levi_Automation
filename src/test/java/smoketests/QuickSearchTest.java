@@ -32,7 +32,8 @@ public class QuickSearchTest extends WMS_TestBase {
         
         System.out.println("🔍 Executing universal header search...");
         test.log(Status.INFO, "🔍 Test execution started: Universal FlexPLM Object Search");
-
+        addScreenShot("📸 Clicked on Logout successful", test, Capture);
+        
         test.log(Status.INFO, "🚀 Launching browser and navigating to dashboard");
         test.log(Status.INFO, "✅ Browser launched successfully");
 

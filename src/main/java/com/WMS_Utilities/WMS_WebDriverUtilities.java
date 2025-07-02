@@ -333,16 +333,21 @@ public class WMS_WebDriverUtilities extends WMS_TestBase {
 	}
 
 	public String takeScreenshot(String screenShotName) throws IOException {
-		// System.out.println("Test Case Failed");
-		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-		TakesScreenshot ts = (TakesScreenshot) driver;
-		File source = ts.getScreenshotAs(OutputType.FILE);
-		String destination = System.getProperty("user.dir") + "\\Failed_Screenshots\\" + screenShotName + dateName
-				+ ".png";
-		File finalDestination = new File(destination);
-		FileHandler.copy(source, finalDestination);
-		return destination;
+	    String dateStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+
+	    // Use platform-independent path separators
+	    String screenshotDir = System.getProperty("user.dir") + File.separator + "Failed_Screenshots";
+	    new File(screenshotDir).mkdirs(); // Create folder if it doesn't exist
+
+	    String screenshotPath = screenshotDir + File.separator + screenShotName + "_" + dateStamp + ".png";
+
+	    File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	    File finalDest = new File(screenshotPath);
+	    FileHandler.copy(source, finalDest);
+
+	    return screenshotPath;
 	}
+
 
 	public void switchToWindows() throws InterruptedException {
 		String mainWindow = driver.getWindowHandle();

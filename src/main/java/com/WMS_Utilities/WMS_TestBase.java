@@ -313,26 +313,24 @@ public class WMS_TestBase implements WMS_GlobalProperties {
 		Thread.sleep(i);
 	}
 
-	public void addScreenShot(String TestName, ExtentTest testparam, boolean Capture) {
+	public void addScreenShot(String testName, ExtentTest test, boolean capture) {
+	    if (!capture) return;
 
-		if (Capture) {
-			try {
-				WMS_WebDriverUtilities webdriverUtils = new WMS_WebDriverUtilities(driver);
+	    try {
+	        WMS_WebDriverUtilities webdriverUtils = new WMS_WebDriverUtilities(driver);
+	        String screenshotPath = webdriverUtils.takeScreenshot(testName);
 
-				String screenshotpath = webdriverUtils.takeScreenshot(TestName);
-				testparam.addScreenCaptureFromPath(screenshotpath);
+	        test.addScreenCaptureFromPath(screenshotPath);
+	        System.out.println("📸 Screenshot captured: " + screenshotPath);
 
-				DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");// 333333333333333000000
-				LocalDateTime now = LocalDateTime.now();
-				String SerialNo = dtf.format(now).toString() + "0";
-				System.out.println("Execution Time is  : " + SerialNo);
+	        String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"));
+	        System.out.println("🕒 Execution time: " + timestamp);
 
-			} catch (Exception e) {
-				System.out.println("Screenshot Failed");
-			}
-
-		}
+	    } catch (Exception e) {
+	        System.out.println("⚠️ Screenshot capture failed for " + testName + ": " + e.getMessage());
+	    }
 	}
+
 
 
 
