@@ -39,7 +39,7 @@ public class TC01_P2_CustomLoaders_Download_SeasonalLook_Loadersfiles extends WM
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			LaunchSpecific_URL(Administrator_URL);
 			dashboardPage = new DashboardPage(driver);
 			mainMenuPage = new MainMenuPage(driver);

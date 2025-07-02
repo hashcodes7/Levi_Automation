@@ -45,7 +45,7 @@ public class TC322_P2_VendorPortalAccess_DocumentSubTypeImagesVendorImages exten
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			LaunchSpecific_URL(VendorPortal_URl);
 			dashboardPage = new DashboardPage(driver);
 			mainMenuPage = new MainMenuPage(driver);

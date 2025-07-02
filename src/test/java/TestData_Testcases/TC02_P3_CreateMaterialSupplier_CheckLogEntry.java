@@ -48,7 +48,7 @@ public class TC02_P3_CreateMaterialSupplier_CheckLogEntry extends WMS_TestBase {
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			pds_URL = PDS_URL;
 			LaunchSpecific_URL(pds_URL);
 			initializePages();

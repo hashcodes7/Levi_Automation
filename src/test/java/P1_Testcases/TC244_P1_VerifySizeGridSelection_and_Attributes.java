@@ -48,7 +48,7 @@ public class TC244_P1_VerifySizeGridSelection_and_Attributes extends WMS_TestBas
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			LaunchSpecific_URL(Global_URL);
 			dashboardPage = new DashboardPage(driver);
 			mainMenuPage = new MainMenuPage(driver);

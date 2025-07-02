@@ -45,7 +45,7 @@ public class TC319_P2_VendorPortalAccessAndUpdate_DocumentsCreatedByVendor exten
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			LaunchSpecific_URL(VendorPortal_URl);
 			launchUrl();
 			dashboardPage = new DashboardPage(driver);

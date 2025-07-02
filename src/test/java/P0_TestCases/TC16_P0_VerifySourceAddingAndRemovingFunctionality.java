@@ -77,7 +77,7 @@ public class TC16_P0_VerifySourceAddingAndRemovingFunctionality extends WMS_Test
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			LaunchSpecific_URL(Administrator_URL);
 			dashboardPage = new DashboardPage(driver);
 			mainMenuPage = new MainMenuPage(driver);

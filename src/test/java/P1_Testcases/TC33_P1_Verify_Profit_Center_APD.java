@@ -52,7 +52,7 @@ public class TC33_P1_Verify_Profit_Center_APD extends WMS_TestBase {
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			global_URL = Global_URL;
 			LaunchSpecific_URL(global_URL);
 			dashboardPage = new DashboardPage(driver);

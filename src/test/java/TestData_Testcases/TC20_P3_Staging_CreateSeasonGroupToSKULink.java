@@ -59,7 +59,7 @@ public class TC20_P3_Staging_CreateSeasonGroupToSKULink extends WMS_TestBase {
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			global_URL = Administrator_URL;
 			LaunchSpecific_URL(global_URL);
 			dashboardPage = new DashboardPage(driver);

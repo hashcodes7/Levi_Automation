@@ -61,7 +61,7 @@ public class TC33_P3_BOMAPP_Ability_to_search_partial_entry extends WMS_TestBase
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			adimin_URL = Administrator_URL;
 			LaunchSpecific_URL(adimin_URL);
 			dashboardPage = new DashboardPage(driver);

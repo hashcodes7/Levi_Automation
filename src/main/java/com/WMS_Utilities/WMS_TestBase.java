@@ -110,22 +110,31 @@ public class WMS_TestBase implements WMS_GlobalProperties {
 	}
 	
 	
-public WebDriver invokeBrowser() throws InterruptedException {
-	System.out.println("invoke function triggered");
-    ChromeOptions options = new ChromeOptions();
-    options.addArguments("--no-sandbox");
-    options.addArguments("--disable-dev-shm-usage");
-//    options.addArguments("--headless=new");
-    options.addArguments("--disable-gpu");
-    String timestamp = String.valueOf(System.currentTimeMillis());
-//    String uniqueUserDataDir = System.getProperty("java.io.tmpdir") + "/chrome-profile-" + timestamp + "-" + UUID.randomUUID();
-//    options.addArguments("--user-data-dir=" + uniqueUserDataDir);
-    WebDriverManager.chromedriver().setup(); // Setup first
-    driver = new ChromeDriver(options); // Then instantiate
-    driver.manage().window().maximize();
-    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-    return driver;
-}
+	public WebDriver invokeBrowser(String testClassName) {
+	    System.out.println("🚀 Launching ChromeDriver for: " + testClassName);
+
+	    ChromeOptions options = new ChromeOptions();
+
+	    // Mandatory for Linux/GitHub Actions environment
+	    options.addArguments("--headless=new");
+	    options.addArguments("--no-sandbox");
+	    options.addArguments("--disable-dev-shm-usage");
+	    options.addArguments("--disable-gpu");
+	    options.addArguments("--window-size=1920,1080");
+
+	    // Isolate user-data-dir to avoid collisions
+	    String uniqueProfile = System.getProperty("java.io.tmpdir") +
+	                           "/chrome-profile-" + testClassName + "-" +
+	                           System.nanoTime() + "-" + UUID.randomUUID();
+	    options.addArguments("--user-data-dir=" + uniqueProfile);
+
+	    // Setup WebDriver and return the instance
+	    WebDriverManager.chromedriver().setup();
+	    WebDriver driver = new ChromeDriver(options);
+	    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+	    return driver;
+	}
+
 
 	public void launchUrl() {
 

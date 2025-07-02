@@ -60,7 +60,7 @@ public class TC_P3_BOMAPP_Multiple_VerifyDataSyncFromFlexPLM extends WMS_TestBas
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			adimin_URL = Administrator_URL;
 			LaunchSpecific_URL(adimin_URL);
 			dashboardPage = new DashboardPage(driver);

@@ -76,7 +76,7 @@ public class TC01_P0_Adoption_Status_Changes extends WMS_TestBase {
 	 */
 	public void navigateToGlobalURL() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			global_URL = Global_URL_STG;
 			LaunchSpecific_URL(global_URL);
 			initializePages();
@@ -86,14 +86,14 @@ public class TC01_P0_Adoption_Status_Changes extends WMS_TestBase {
 	}
 
 	public void navigateToLocalHubURL() throws InterruptedException {
-		driver = invokeBrowser();
+		driver = invokeBrowser(this.getClass().getSimpleName());
 		localHub_URL = Sanfrancisco_URl_STG;
 		LaunchSpecific_URL(localHub_URL);
 		initializePages();
 	}
 
 	public void navigateToAffiliateURL() throws InterruptedException {
-		driver = invokeBrowser();
+		driver = invokeBrowser(this.getClass().getSimpleName());
 		affiliate_URL = AFF_URL_STG;
 		LaunchSpecific_URL(affiliate_URL);
 		initializePages();

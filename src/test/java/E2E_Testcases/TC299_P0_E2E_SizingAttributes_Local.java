@@ -75,7 +75,7 @@ public class TC299_P0_E2E_SizingAttributes_Local extends WMS_TestBase {
 	 */
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			localHub_URL = Sanfrancisco_URl_STG;
 			LaunchSpecific_URL(localHub_URL);
 			dashboardPage = new DashboardPage(driver);

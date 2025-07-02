@@ -50,7 +50,7 @@ public class TC_P3_Multiple_Check_MeasurementType extends WMS_TestBase {
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			garmentDeveloper_URL = GarmentDeveloper_URL;
 			LaunchSpecific_URL(garmentDeveloper_URL);
 			dashboardPage = new DashboardPage(driver);

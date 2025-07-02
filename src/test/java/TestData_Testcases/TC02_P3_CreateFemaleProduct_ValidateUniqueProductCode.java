@@ -64,7 +64,7 @@ public class TC02_P3_CreateFemaleProduct_ValidateUniqueProductCode extends WMS_T
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			global_URL = Global_URL_STG;
 			LaunchSpecific_URL(global_URL);;
 			dashboardPage = new DashboardPage(driver);

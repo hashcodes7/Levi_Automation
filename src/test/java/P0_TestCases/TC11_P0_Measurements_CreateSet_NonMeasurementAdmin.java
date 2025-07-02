@@ -41,7 +41,7 @@ public class TC11_P0_Measurements_CreateSet_NonMeasurementAdmin extends WMS_Test
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			launchUrl();
 			
 			dashboardPage = new DashboardPage(driver);

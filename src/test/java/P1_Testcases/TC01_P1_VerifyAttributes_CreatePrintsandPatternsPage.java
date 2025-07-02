@@ -39,7 +39,7 @@ public class TC01_P1_VerifyAttributes_CreatePrintsandPatternsPage extends WMS_Te
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			launchUrl();
 			dashboardPage = new DashboardPage(driver);
 			mainMenuPage = new MainMenuPage(driver);

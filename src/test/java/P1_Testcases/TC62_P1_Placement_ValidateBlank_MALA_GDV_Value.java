@@ -41,7 +41,7 @@ public class TC62_P1_Placement_ValidateBlank_MALA_GDV_Value extends WMS_TestBase
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			LaunchSpecific_URL(Admin_URL_STG);
 			dashboardPage = new DashboardPage(driver);
 			mainMenuPage = new MainMenuPage(driver);

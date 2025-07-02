@@ -51,7 +51,7 @@ public class TC19_P3_Staging_CreateColorway_VerifyStagingId extends WMS_TestBase
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			LaunchSpecific_URL(Admin_URL_STG);
 			dashboardPage = new DashboardPage(driver);
 			mainMenuPage = new MainMenuPage(driver);

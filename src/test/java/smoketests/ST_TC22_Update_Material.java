@@ -30,7 +30,7 @@ public class ST_TC22_Update_Material extends WMS_TestBase{
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			LaunchSpecific_URL(CurrentURL);
 			dashboardPage = new DashboardPage(driver);
 			materialPage=new MaterialPage(driver);

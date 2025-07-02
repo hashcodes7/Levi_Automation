@@ -52,7 +52,7 @@ public class TC08_P2_ColorwaySeason_TriggerSetUp_forUndergoneSetUPLSE extends WM
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			LaunchSpecific_URL(Global_URL);
 			dashboardPage = new DashboardPage(driver);
 			mainMenuPage = new MainMenuPage(driver);
@@ -67,7 +67,7 @@ public class TC08_P2_ColorwaySeason_TriggerSetUp_forUndergoneSetUPLSE extends WM
 	}
 	
 	public void initiateObj(String url) throws InterruptedException {
-		driver = invokeBrowser();
+		driver = invokeBrowser(this.getClass().getSimpleName());
 		LaunchSpecific_URL(url);
 		dashboardPage = new DashboardPage(driver);
 		mainMenuPage = new MainMenuPage(driver);

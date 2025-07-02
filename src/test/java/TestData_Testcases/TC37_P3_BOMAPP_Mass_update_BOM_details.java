@@ -53,7 +53,7 @@ public class TC37_P3_BOMAPP_Mass_update_BOM_details extends WMS_TestBase {
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			adimin_URL = Administrator_URL;
 			LaunchSpecific_URL(adimin_URL);
 			dashboardPage = new DashboardPage(driver);

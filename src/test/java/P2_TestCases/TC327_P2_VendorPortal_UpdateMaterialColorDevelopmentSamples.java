@@ -45,7 +45,7 @@ public class TC327_P2_VendorPortal_UpdateMaterialColorDevelopmentSamples extends
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			LaunchSpecific_URL(VendorPortal_URl);
 			dashboardPage = new DashboardPage(driver);
 			mainMenuPage = new MainMenuPage(driver);

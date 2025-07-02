@@ -53,7 +53,7 @@ public class TC_SetUP_And_Activate_LSUS_Linesheet extends WMS_TestBase {
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			LaunchSpecific_URL(Global_URL);
 			dashboardPage = new DashboardPage(driver);
 			mainMenuPage = new MainMenuPage(driver);
@@ -71,7 +71,7 @@ public class TC_SetUP_And_Activate_LSUS_Linesheet extends WMS_TestBase {
 	}
 
 	public void initiateObj(String url) throws InterruptedException {
-		driver = invokeBrowser();
+		driver = invokeBrowser(this.getClass().getSimpleName());
 		LaunchSpecific_URL(url);
 		dashboardPage = new DashboardPage(driver);
 		mainMenuPage = new MainMenuPage(driver);
@@ -87,7 +87,7 @@ public class TC_SetUP_And_Activate_LSUS_Linesheet extends WMS_TestBase {
 	}
 
 	public void initiateObj1(String url) throws InterruptedException {
-		driver = invokeBrowser();
+		driver = invokeBrowser(this.getClass().getSimpleName());
 		LaunchSpecific_URL(url);
 		dashboardPage = new DashboardPage(driver);
 		mainMenuPage = new MainMenuPage(driver);
@@ -102,7 +102,7 @@ public class TC_SetUP_And_Activate_LSUS_Linesheet extends WMS_TestBase {
 		E2EPages = new E2E_Pages(driver);
 	}
 	public void initiateObj2(String url) throws InterruptedException {
-		driver = invokeBrowser();
+		driver = invokeBrowser(this.getClass().getSimpleName());
 		LaunchSpecific_URL(url);
 		dashboardPage = new DashboardPage(driver);
 		mainMenuPage = new MainMenuPage(driver);
@@ -117,7 +117,7 @@ public class TC_SetUP_And_Activate_LSUS_Linesheet extends WMS_TestBase {
 		E2EPages = new E2E_Pages(driver);
 	}
 	public void initiateObj3(String url) throws InterruptedException {
-		driver = invokeBrowser();
+		driver = invokeBrowser(this.getClass().getSimpleName());
 		LaunchSpecific_URL(url);
 		dashboardPage = new DashboardPage(driver);
 		mainMenuPage = new MainMenuPage(driver);
@@ -132,7 +132,7 @@ public class TC_SetUP_And_Activate_LSUS_Linesheet extends WMS_TestBase {
 		E2EPages = new E2E_Pages(driver);
 	}
 	public void initiateObj4(String url) throws InterruptedException {
-		driver = invokeBrowser();
+		driver = invokeBrowser(this.getClass().getSimpleName());
 		LaunchSpecific_URL(url);
 		dashboardPage = new DashboardPage(driver);
 		mainMenuPage = new MainMenuPage(driver);
@@ -147,7 +147,7 @@ public class TC_SetUP_And_Activate_LSUS_Linesheet extends WMS_TestBase {
 		E2EPages = new E2E_Pages(driver);
 	}
 	public void initiateObj5(String url) throws InterruptedException {
-		driver = invokeBrowser();
+		driver = invokeBrowser(this.getClass().getSimpleName());
 		LaunchSpecific_URL(url);
 		dashboardPage = new DashboardPage(driver);
 		mainMenuPage = new MainMenuPage(driver);
@@ -162,7 +162,7 @@ public class TC_SetUP_And_Activate_LSUS_Linesheet extends WMS_TestBase {
 		E2EPages = new E2E_Pages(driver);
 	}
 	public void initiateObj6(String url) throws InterruptedException {
-		driver = invokeBrowser();
+		driver = invokeBrowser(this.getClass().getSimpleName());
 		LaunchSpecific_URL(url);
 		dashboardPage = new DashboardPage(driver);
 		mainMenuPage = new MainMenuPage(driver);
@@ -177,7 +177,7 @@ public class TC_SetUP_And_Activate_LSUS_Linesheet extends WMS_TestBase {
 		E2EPages = new E2E_Pages(driver);
 	}
 	public void initiateObj7(String url) throws InterruptedException {
-		driver = invokeBrowser();
+		driver = invokeBrowser(this.getClass().getSimpleName());
 		LaunchSpecific_URL(url);
 		dashboardPage = new DashboardPage(driver);
 		mainMenuPage = new MainMenuPage(driver);

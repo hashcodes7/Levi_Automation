@@ -46,7 +46,7 @@ public class TC329_P2_VendorPortalAccessToSamplesProductFit extends WMS_TestBase
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			LaunchSpecific_URL(VendorPortal_URl);
 			dashboardPage = new DashboardPage(driver);
 			mainMenuPage = new MainMenuPage(driver);

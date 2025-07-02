@@ -74,7 +74,7 @@ public class TC_P3_CreateMultipleFabricTypeMaterial_CheckLogEntry extends WMS_Te
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			pds_URL = PDS_URL;
 			LaunchSpecific_URL(pds_URL);
 			initializePages();

@@ -48,7 +48,7 @@ public class TC03_P2_Color_UploadPrintsandpatternsThumbnail extends WMS_TestBase
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			LaunchSpecific_URL(Design_URL_STG);
 			dashboardPage = new DashboardPage(driver);
 			mainMenuPage = new MainMenuPage(driver);

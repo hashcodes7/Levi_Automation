@@ -71,7 +71,7 @@ public class TC01_P3_CreateProduct_CheckLogEntry extends WMS_TestBase {
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			global_URL = Global_URL_STG;
 			LaunchSpecific_URL(global_URL);
 			initializePages();

@@ -49,7 +49,7 @@ public class TC162_Viewing_Attributes_of_Prod_Measurement_Sets extends WMS_TestB
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			LaunchSpecific_URL(GarmentDeveloper_URL);
 			dashboardPage = new DashboardPage(driver);
 			mainMenuPage = new MainMenuPage(driver);

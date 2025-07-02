@@ -63,7 +63,7 @@ public class TC_P3_CreateMultipleMaleProduct_ValidateUniqueProductCode extends W
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			global_URL = Global_URL_STG;
 			LaunchSpecific_URL(global_URL);
 			dashboardPage = new DashboardPage(driver);

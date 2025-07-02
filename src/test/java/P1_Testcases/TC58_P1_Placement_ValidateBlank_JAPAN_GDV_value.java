@@ -41,7 +41,7 @@ public class TC58_P1_Placement_ValidateBlank_JAPAN_GDV_value extends WMS_TestBas
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			LaunchSpecific_URL(Admin_URL_STG);
 			dashboardPage = new DashboardPage(driver);
 			mainMenuPage = new MainMenuPage(driver);

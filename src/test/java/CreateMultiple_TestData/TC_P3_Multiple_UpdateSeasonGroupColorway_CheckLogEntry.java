@@ -83,7 +83,7 @@ public class TC_P3_Multiple_UpdateSeasonGroupColorway_CheckLogEntry extends WMS_
 	@BeforeMethod
 	public void navigateToGlobalURL() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			global_URL = Global_URL;
 			LaunchSpecific_URL(global_URL);
 			initializePages();
@@ -93,14 +93,14 @@ public class TC_P3_Multiple_UpdateSeasonGroupColorway_CheckLogEntry extends WMS_
 	}
 
 	public void navigateToLocalHubURL() throws InterruptedException {
-		driver = invokeBrowser();
+		driver = invokeBrowser(this.getClass().getSimpleName());
 		localHub_URL = LocalHub_URL;
 		LaunchSpecific_URL(localHub_URL);
 		initializePages();
 	}
 
 	public void navigateToAffiliateURL() throws InterruptedException {
-		driver = invokeBrowser();
+		driver = invokeBrowser(this.getClass().getSimpleName());
 		affiliate_URL = Affiliate_URL;
 		LaunchSpecific_URL(affiliate_URL);
 		initializePages();

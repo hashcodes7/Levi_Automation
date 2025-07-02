@@ -44,7 +44,7 @@ public class TC179_P1_CopyProductMeasurementSetsFromClipboard extends WMS_TestBa
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			LaunchSpecific_URL(GarmentDeveloper_URL);
 			dashboardPage = new DashboardPage(driver);
 			mainMenuPage = new MainMenuPage(driver);

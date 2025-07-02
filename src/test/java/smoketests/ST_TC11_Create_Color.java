@@ -30,7 +30,7 @@ public class ST_TC11_Create_Color extends WMS_TestBase{
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			if (driver == null) {
 			    throw new IllegalStateException("WebDriver failed to initialize! 111111111111111");
 			}

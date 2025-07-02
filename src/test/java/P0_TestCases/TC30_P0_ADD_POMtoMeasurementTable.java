@@ -41,7 +41,7 @@ public class TC30_P0_ADD_POMtoMeasurementTable extends WMS_TestBase{
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			launchUrl();
 			
 			dashboardPage = new DashboardPage(driver);

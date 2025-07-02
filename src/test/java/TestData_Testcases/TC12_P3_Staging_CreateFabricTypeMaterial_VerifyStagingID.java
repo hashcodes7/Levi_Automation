@@ -71,7 +71,7 @@ public class TC12_P3_Staging_CreateFabricTypeMaterial_VerifyStagingID extends WM
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			pds_URL = PDS_URL;
 			LaunchSpecific_URL(pds_URL);
 			dashboardPage = new DashboardPage(driver);

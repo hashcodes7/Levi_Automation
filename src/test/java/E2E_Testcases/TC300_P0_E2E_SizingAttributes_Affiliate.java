@@ -74,7 +74,7 @@ public class TC300_P0_E2E_SizingAttributes_Affiliate extends WMS_TestBase {
 	 */
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			affiliate_URL = AFF_URL_STG;
 			LaunchSpecific_URL(affiliate_URL);
 			dashboardPage = new DashboardPage(driver);

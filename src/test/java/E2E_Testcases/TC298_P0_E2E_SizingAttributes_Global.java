@@ -74,7 +74,7 @@ public class TC298_P0_E2E_SizingAttributes_Global extends WMS_TestBase {
 	 */
 	public void setUp() throws InterruptedException {
 		if (CloseBrowser) {
-			driver = invokeBrowser();
+			driver = invokeBrowser(this.getClass().getSimpleName());
 			global_URL = Global_URL_STG;
 			LaunchSpecific_URL(global_URL);
 			dashboardPage = new DashboardPage(driver);
