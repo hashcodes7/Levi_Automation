@@ -22,7 +22,7 @@ import junit.framework.Assert;
 
 @Test(enabled = true, groups= {"P0_TC"})
 public  class TC02_P0_Create_PrintsAndPatterns_color extends WMS_TestBase{
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Palette_Page palettepage;

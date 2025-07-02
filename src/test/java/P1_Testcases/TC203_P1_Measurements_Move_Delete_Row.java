@@ -29,7 +29,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P1_TC"})
 public class TC203_P1_Measurements_Move_Delete_Row extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	MaterialPage materialPage;

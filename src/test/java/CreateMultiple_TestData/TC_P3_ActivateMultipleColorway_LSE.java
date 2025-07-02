@@ -28,7 +28,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups= {"P3_TC"})
 public class TC_P3_ActivateMultipleColorway_LSE extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Palette_Page palettepage;

@@ -41,7 +41,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P0_TC"})
 public class TC63_P0_Linesheet_DeleteFilter extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	SeasonPage seasonPage;

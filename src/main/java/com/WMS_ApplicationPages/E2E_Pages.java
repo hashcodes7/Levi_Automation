@@ -17,7 +17,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 public class E2E_Pages extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public E2E_Pages(WebDriver driver) {
 		super(driver);

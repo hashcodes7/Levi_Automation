@@ -28,7 +28,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups= {"P1_TC"})
 public class TC244_P1_VerifySizeGridSelection_and_Attributes extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Colorway_page Colorwaypage;

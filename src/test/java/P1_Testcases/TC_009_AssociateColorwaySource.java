@@ -31,7 +31,7 @@ import junit.framework.Assert;
 
 @Test(enabled = true, groups= {"P1_TC"})
 public class TC_009_AssociateColorwaySource extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Colorway_page Colorwaypage;

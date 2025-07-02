@@ -25,7 +25,7 @@ import com.aventstack.extentreports.Status;
 import junit.framework.Assert;
 
 public class SpecificationPage extends WMS_WebDriverUtilities{
-	WebDriver driver;
+	
 	
 	public SpecificationPage(WebDriver driver) {
 		super(driver);

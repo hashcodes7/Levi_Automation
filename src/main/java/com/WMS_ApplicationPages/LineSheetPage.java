@@ -37,7 +37,7 @@ import com.aventstack.extentreports.Status;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class LineSheetPage extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public LineSheetPage(WebDriver driver) {
 		super(driver);

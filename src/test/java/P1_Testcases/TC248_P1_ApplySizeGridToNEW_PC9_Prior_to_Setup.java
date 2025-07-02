@@ -28,7 +28,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups= {"P1_TC"})
 public class TC248_P1_ApplySizeGridToNEW_PC9_Prior_to_Setup extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Colorway_page Colorwaypage;

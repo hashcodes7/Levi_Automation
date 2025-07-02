@@ -37,7 +37,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P1_TC"})
 public class TC19_P1_Seasonal_Look_Update_and_Derived_Attribute extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	SeasonPage seasonPage;

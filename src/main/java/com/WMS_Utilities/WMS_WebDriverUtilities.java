@@ -42,7 +42,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class WMS_WebDriverUtilities extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	WebDriverWait wait;
 
 	public WMS_WebDriverUtilities(WebDriver driver) {

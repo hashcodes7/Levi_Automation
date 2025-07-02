@@ -29,7 +29,7 @@ import junit.framework.Assert;
 
 @Test(enabled = true, groups= {"P2_TC"})
 public class TC278_P2_AppendComponentToComponentsProductList extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Colorway_page Colorwaypage;

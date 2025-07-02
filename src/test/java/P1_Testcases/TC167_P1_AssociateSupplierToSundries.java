@@ -22,7 +22,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P1_TC"})
 public class TC167_P1_AssociateSupplierToSundries extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	MaterialPage materialPage;

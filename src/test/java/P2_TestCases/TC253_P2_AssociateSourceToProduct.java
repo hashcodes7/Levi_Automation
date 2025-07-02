@@ -39,7 +39,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P2_TC"})
 public class TC253_P2_AssociateSourceToProduct extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	SeasonPage seasonPage;

@@ -37,7 +37,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P1_TC"})
 public class TC214_P1_VerifyStyleTypeDerivation extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	SeasonPage seasonPage;

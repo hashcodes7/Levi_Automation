@@ -37,7 +37,7 @@ public class TC01_P0_Create_Levis_Male_Accessories_Season
 
 		extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	SeasonPage seasonPage;

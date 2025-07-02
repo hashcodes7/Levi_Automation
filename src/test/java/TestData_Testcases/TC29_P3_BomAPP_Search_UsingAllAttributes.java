@@ -21,7 +21,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups= {"P3_TC"})
 public class TC29_P3_BomAPP_Search_UsingAllAttributes extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	BOM_Page BOMPage;

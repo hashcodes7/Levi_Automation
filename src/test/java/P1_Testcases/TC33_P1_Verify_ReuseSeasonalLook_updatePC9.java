@@ -27,7 +27,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups= {"P1_TC"})
 public class TC33_P1_Verify_ReuseSeasonalLook_updatePC9  extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Palette_Page palettepage;

@@ -32,7 +32,7 @@ import java.awt.datatransfer.Clipboard;
 //import junit.framework.Assert;
 
 public class VendorPortalPage extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public VendorPortalPage(WebDriver driver) {
 		super(driver);

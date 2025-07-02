@@ -27,7 +27,7 @@ import com.aventstack.extentreports.Status;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class ColorDetailsPage extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public ColorDetailsPage(WebDriver driver) {
 		super(driver);

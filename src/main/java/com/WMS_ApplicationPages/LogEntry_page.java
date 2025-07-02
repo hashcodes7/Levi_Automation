@@ -15,7 +15,7 @@ import com.aventstack.extentreports.Status;
 import junit.framework.Assert;
 
 public class LogEntry_page extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public LogEntry_page(WebDriver driver) {
 		super(driver);

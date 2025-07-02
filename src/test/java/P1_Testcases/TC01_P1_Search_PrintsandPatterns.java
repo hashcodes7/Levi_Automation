@@ -22,7 +22,7 @@ import Excel_Utilities.DataProviders;
 import junit.framework.Assert;
 @Test(enabled = true, groups = { "Color_Scenarios" })
 public class TC01_P1_Search_PrintsandPatterns  extends WMS_TestBase{
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Colorway_page Colorwaypage;

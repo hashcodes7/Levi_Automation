@@ -26,7 +26,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups= {"P2_TC"})
 public class TC04_P2_Color_UpdateLookInformation_SeasonalLook extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Palette_Page palettepage;

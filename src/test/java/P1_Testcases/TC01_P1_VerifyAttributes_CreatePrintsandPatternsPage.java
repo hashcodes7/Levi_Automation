@@ -22,7 +22,7 @@ import junit.framework.Assert;
 
 @Test(enabled = true, groups= {"P1_TC"})
 public class TC01_P1_VerifyAttributes_CreatePrintsandPatternsPage extends WMS_TestBase{
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Colorway_page Colorwaypage;

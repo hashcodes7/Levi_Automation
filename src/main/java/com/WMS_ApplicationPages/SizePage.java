@@ -22,7 +22,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 public class SizePage extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public SizePage(WebDriver driver) {
 		super(driver);

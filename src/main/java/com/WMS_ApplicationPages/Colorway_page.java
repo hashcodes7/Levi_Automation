@@ -27,7 +27,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 public class Colorway_page extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public Colorway_page(WebDriver driver) {
 		super(driver);

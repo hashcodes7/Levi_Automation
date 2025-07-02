@@ -35,7 +35,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P2_TC"})
 public class TC223_P2_Create_Levis_NON_LSE_Affiliate_Season_Collection extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	SeasonPage seasonPage;

@@ -29,7 +29,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P1_TC"})
 public class TC179_P1_CopyProductMeasurementSetsFromClipboard extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	MaterialPage materialPage;

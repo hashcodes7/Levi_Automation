@@ -27,7 +27,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups = { "E2E_TC" })
 public class TC320_P0_E2E_UploadPlacementFile extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	LineSheetPage lineSheetPage;

@@ -46,7 +46,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P0_TC"})
 public class TC16_P0_VerifySourceAddingAndRemovingFunctionality extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	SeasonPage seasonPage;

@@ -30,7 +30,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P3_TC"})
 public class TC_P3_Multiple_Check_MeasurementType extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	MaterialPage materialPage;

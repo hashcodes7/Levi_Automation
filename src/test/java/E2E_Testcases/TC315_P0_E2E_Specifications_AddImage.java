@@ -28,7 +28,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups = { "E2E_TC" })
 public class TC315_P0_E2E_Specifications_AddImage  extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	LineSheetPage lineSheetPage;

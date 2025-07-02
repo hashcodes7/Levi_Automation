@@ -24,7 +24,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups= {"P2_TC"})
 public class TC322_P2_VendorPortalAccess_DocumentSubTypeImagesVendorImages extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	MaterialPage materialPage;

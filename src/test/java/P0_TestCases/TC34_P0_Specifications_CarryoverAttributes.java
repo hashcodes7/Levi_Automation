@@ -29,7 +29,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups= {"P0_TC"})
 public class TC34_P0_Specifications_CarryoverAttributes extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	SeasonPage seasonPage;
 	ProductPage productPage;

@@ -23,7 +23,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups= {"P2_TC"})
 public class TC147_P2_AssociateColorsToSundryRecords extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	MaterialPage materialPage;

@@ -23,7 +23,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups= {"P1_TC"})
 public class TC161_P1_AssociateFabricsToFinishRecords extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	MaterialPage materialPage;

@@ -43,7 +43,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P2_TC"})
 public class TC233_P2_ReplaceSizeGridOfPC9_PostSetup extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	SeasonPage seasonPage;

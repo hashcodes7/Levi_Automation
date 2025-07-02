@@ -21,7 +21,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups = { "E2E_TC" })
 public class ST_TC22_Update_Material extends WMS_TestBase{
 	
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MaterialPage materialPage;
 	boolean Capture = true;

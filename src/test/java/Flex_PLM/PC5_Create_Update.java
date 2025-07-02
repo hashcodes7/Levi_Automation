@@ -37,7 +37,7 @@ import junit.framework.Assert;
 @Test(enabled = true, groups = { "Single_Orders" })
 public class PC5_Create_Update extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	SeasonPage seasonPage;

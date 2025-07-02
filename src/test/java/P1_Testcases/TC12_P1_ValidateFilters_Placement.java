@@ -22,7 +22,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups= {"P1_TC"})
 public class TC12_P1_ValidateFilters_Placement extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	LineSheetPage lineSheetPage;

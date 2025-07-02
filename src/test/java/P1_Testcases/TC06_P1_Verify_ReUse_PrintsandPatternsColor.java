@@ -27,7 +27,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups = { "Color_Scenarios" })
 public class TC06_P1_Verify_ReUse_PrintsandPatternsColor extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Palette_Page palettepage;

@@ -30,7 +30,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P2_TC"})
 public class TC161_P2_Viewing_the_Measurement_Set_Table_Display extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	MaterialPage materialPage;

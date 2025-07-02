@@ -40,7 +40,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P2_TC"})
 public class TC296_P2_VendorUpdateReflectsInAllSpecifications extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	SeasonPage seasonPage;

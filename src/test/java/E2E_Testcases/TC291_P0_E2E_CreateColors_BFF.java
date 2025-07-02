@@ -19,7 +19,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups = { "E2E_TC" })
 public class TC291_P0_E2E_CreateColors_BFF extends WMS_TestBase{
 	
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Palette_Page palettepage;

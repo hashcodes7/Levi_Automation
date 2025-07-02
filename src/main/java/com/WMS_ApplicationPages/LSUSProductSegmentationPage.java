@@ -24,7 +24,7 @@ import com.WMS_Utilities.WMS_WebDriverUtilities;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class LSUSProductSegmentationPage extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public LSUSProductSegmentationPage(WebDriver driver) {
 		super(driver);

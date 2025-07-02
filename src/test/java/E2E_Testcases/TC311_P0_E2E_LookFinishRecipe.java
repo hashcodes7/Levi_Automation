@@ -36,7 +36,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups = { "E2E_TC" })
 public class TC311_P0_E2E_LookFinishRecipe extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	SeasonPage seasonPage;

@@ -25,7 +25,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P1_TC"})
 public  class TC191_P1_Measurements_Update_POM extends WMS_TestBase{
 	
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Measurements_Page MeasurementsPage;

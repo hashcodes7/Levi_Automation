@@ -26,7 +26,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups= {"P3_TC"})
 public class TC02_P3_UpdateColorway_AfterSetUpLSE extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Palette_Page palettepage;

@@ -23,7 +23,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P0_TC"})
 public  class TC03_P0_Measurements_Create_POM extends WMS_TestBase{
 	
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Measurements_Page MeasurementsPage;

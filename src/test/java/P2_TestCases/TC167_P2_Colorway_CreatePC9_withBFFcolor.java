@@ -26,7 +26,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups= {"P2_TC"})
 public class TC167_P2_Colorway_CreatePC9_withBFFcolor extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Palette_Page palettepage;

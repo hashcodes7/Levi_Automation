@@ -41,7 +41,7 @@ import com.aventstack.extentreports.Status;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class MaterialPage extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 	JavascriptExecutor js;
 
 	public MaterialPage(WebDriver driver) {

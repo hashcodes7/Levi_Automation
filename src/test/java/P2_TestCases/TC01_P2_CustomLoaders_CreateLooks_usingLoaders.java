@@ -25,7 +25,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups= {"P2_TC"})
 public class TC01_P2_CustomLoaders_CreateLooks_usingLoaders extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	LineSheetPage lineSheetPage;

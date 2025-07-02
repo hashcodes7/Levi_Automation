@@ -27,7 +27,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups= {"P1_TC"})
 public class TC37_P1_CopyCarryOver_moveCarryoverAttributes extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	CreateNewColorPage newColorPage;

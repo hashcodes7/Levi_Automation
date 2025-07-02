@@ -34,7 +34,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups = { "Single_Orders" })
 public class Season_Create_Update extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	SeasonPage seasonPage;

@@ -38,7 +38,7 @@ import org.openqa.selenium.JavascriptExecutor;
 
 @Test(enabled = true, groups= {"P3_TC"})
 public class TC27_P3_BOMAPP_VerifyDataSyncFromFlexPLM extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	BOM_Page BOMPage;

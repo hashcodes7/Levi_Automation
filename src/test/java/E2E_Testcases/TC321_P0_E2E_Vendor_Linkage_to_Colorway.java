@@ -45,7 +45,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups = { "E2E_TC" })
 public class TC321_P0_E2E_Vendor_Linkage_to_Colorway extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	SeasonPage seasonPage;

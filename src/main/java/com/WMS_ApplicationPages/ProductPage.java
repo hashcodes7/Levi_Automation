@@ -33,7 +33,7 @@ import com.aventstack.extentreports.Status;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class ProductPage extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public ProductPage(WebDriver driver) {
 		super(driver);

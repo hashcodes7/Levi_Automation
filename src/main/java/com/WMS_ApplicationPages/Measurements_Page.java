@@ -33,7 +33,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 public class Measurements_Page extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public Measurements_Page(WebDriver driver) {
 		super(driver);

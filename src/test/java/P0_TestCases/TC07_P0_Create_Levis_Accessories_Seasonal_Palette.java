@@ -38,7 +38,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P0_TC"})
 public class TC07_P0_Create_Levis_Accessories_Seasonal_Palette extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	SeasonPage seasonPage;

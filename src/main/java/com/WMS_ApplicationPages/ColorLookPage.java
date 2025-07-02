@@ -23,7 +23,7 @@ import com.aventstack.extentreports.Status;
 import junit.framework.Assert;
 
 public class ColorLookPage extends WMS_WebDriverUtilities{
-	WebDriver driver;
+	
 	
 	public ColorLookPage(WebDriver driver) {
 		super(driver);

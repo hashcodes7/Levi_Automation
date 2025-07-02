@@ -23,7 +23,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P0_TC"})
 public class TC10_P0_CreateMeasureSet_UsingTemplate extends WMS_TestBase{
 	
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	LineSheet_Edit_Page LineSheetEditPage;

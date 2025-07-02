@@ -32,7 +32,7 @@ import junit.framework.Assert;
 @Test(enabled = true, groups= {"P3_TC"})
 public class TC_P3_CreateMultipleColor_PrintsAndPatterns_VerifyStagingRowId extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	SeasonPage seasonPage;

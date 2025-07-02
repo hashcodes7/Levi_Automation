@@ -32,7 +32,7 @@ import junit.framework.Assert;
 
 @Test(enabled = true, groups= {"P1_TC"})
 public class TC_007_CarryoverColorway extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Colorway_page Colorwaypage;

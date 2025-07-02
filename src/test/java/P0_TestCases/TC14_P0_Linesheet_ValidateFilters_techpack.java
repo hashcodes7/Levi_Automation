@@ -22,7 +22,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups= {"P0_TC"})
 public class TC14_P0_Linesheet_ValidateFilters_techpack extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	LineSheetPage lineSheetPage;

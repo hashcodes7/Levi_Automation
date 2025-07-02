@@ -25,7 +25,7 @@ import com.WMS_Utilities.WMS_WebDriverUtilities;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class MainMenuPage extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public MainMenuPage(WebDriver driver) {
 		super(driver);

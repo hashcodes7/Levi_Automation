@@ -27,7 +27,7 @@ import com.aventstack.extentreports.Status;
 import junit.framework.Assert;
 
 public class BOM_Page extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public BOM_Page(WebDriver driver) {
 		super(driver);

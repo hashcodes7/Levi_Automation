@@ -31,7 +31,7 @@ import junit.framework.Assert;
 
 @Test(enabled = true, groups= {"P0_TC"})
 public class TC19_P0_PrimarySource_Specifications extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	SeasonPage seasonPage;
 	ProductPage productPage;

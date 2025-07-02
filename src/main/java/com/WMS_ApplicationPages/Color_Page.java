@@ -29,7 +29,7 @@ import com.aventstack.extentreports.Status;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class Color_Page extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public Color_Page(WebDriver driver) {
 		super(driver);

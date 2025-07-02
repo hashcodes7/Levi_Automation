@@ -42,7 +42,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P3_TC"})
 public class TC18_P3_Staging_CreateProduct_VerifyStagingID extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	SeasonPage seasonPage;

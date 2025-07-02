@@ -42,7 +42,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P3_TC"})
 public class TC01_P3_CreateProduct_CheckLogEntry extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	SeasonPage seasonPage;

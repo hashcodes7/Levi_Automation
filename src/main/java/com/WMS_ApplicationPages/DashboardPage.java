@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.Select;
 import com.WMS_Utilities.WMS_WebDriverUtilities;
 
 public class DashboardPage extends WMS_WebDriverUtilities {
-		WebDriver driver;
+		
 		
 		public DashboardPage(WebDriver driver) {
 			super(driver);

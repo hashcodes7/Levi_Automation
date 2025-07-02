@@ -29,7 +29,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 public class CustomLoaders_page extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public CustomLoaders_page(WebDriver driver) {
 		super(driver);

@@ -29,7 +29,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 public class BusinessObjectPage extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public BusinessObjectPage(WebDriver driver) {
 		super(driver);

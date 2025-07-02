@@ -34,7 +34,7 @@ import com.aventstack.extentreports.Status;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class SeasonPage extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public SeasonPage(WebDriver driver) {
 		super(driver);

@@ -36,7 +36,7 @@ import com.aventstack.extentreports.Status;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class SourcingPage extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public SourcingPage(WebDriver driver) {
 		super(driver);

@@ -30,7 +30,7 @@ import com.aventstack.extentreports.Status;
 import Excel_Utilities.DataProviders;
 
 public class TC_SetUP_And_Activate_LSUS_Linesheet extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Palette_Page palettepage;

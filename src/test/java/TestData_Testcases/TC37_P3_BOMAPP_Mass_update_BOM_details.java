@@ -36,7 +36,7 @@ import junit.framework.Assert;
 
 @Test(enabled = true, groups= {"P3_TC"})
 public class TC37_P3_BOMAPP_Mass_update_BOM_details extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	BOM_Page BOMPage;

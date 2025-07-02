@@ -31,7 +31,7 @@ import org.openqa.selenium.JavascriptExecutor;
 
 @Test(enabled = true, groups= {"P0_TC"})
 public class TC25_P0_RemoveSourcefromSeason extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	SeasonPage seasonPage;
 	ProductPage productPage;

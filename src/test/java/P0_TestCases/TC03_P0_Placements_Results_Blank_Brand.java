@@ -22,7 +22,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups= {"P0_TC"})
 public class TC03_P0_Placements_Results_Blank_Brand extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	LineSheetPage lineSheetPage;

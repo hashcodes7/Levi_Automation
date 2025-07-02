@@ -35,7 +35,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups = { "Flex_Plm" })
 public class PC5_Creation extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	SeasonPage seasonPage;

@@ -23,7 +23,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups = { "E2E_TC" })
 public class TC296_P0_E2E_FLAFinalizeView  extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	LineSheetPage lineSheetPage;

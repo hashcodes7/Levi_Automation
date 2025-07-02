@@ -25,7 +25,7 @@ import com.aventstack.extentreports.Status;
 import Excel_Utilities.DataProviders;
 
 public class TC_CreateColorway_SetUPLSE_LSUS extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Palette_Page palettepage;

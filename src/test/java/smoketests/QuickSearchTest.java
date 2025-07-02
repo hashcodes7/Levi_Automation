@@ -13,7 +13,7 @@ import com.aventstack.extentreports.Status;
 @Test(enabled = true, groups = { "E2E_TC" })
 public class QuickSearchTest extends WMS_TestBase {
 
-    WebDriver driver;
+    
     DashboardPage dashboardPage;
 
     @BeforeMethod

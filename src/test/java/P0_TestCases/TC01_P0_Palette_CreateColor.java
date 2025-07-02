@@ -28,7 +28,7 @@ import junit.framework.Assert;
 
 @Test(enabled = true, groups= {"P0_TC"})
 public class TC01_P0_Palette_CreateColor extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Palette_Page palettepage;

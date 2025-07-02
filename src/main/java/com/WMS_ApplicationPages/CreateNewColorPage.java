@@ -22,7 +22,7 @@ import com.aventstack.extentreports.Status;
 import junit.framework.Assert;
 
 public class CreateNewColorPage extends WMS_WebDriverUtilities{
-	WebDriver driver;
+	
 	
 	public CreateNewColorPage(WebDriver driver) {
 		super(driver);

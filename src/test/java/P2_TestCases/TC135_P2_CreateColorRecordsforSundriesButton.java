@@ -30,7 +30,7 @@ import org.openqa.selenium.JavascriptExecutor;
 
 @Test(enabled = true, groups= {"P2_TC"})
 public class TC135_P2_CreateColorRecordsforSundriesButton extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Palette_Page palettepage;

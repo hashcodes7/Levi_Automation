@@ -26,7 +26,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class PopUpPage extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public PopUpPage(WebDriver driver) {
 		super(driver);

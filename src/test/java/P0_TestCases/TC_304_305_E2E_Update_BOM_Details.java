@@ -36,7 +36,7 @@ import junit.framework.Assert;
 
 @Test(enabled = true, groups= {"P0_TC"})
 public class TC_304_305_E2E_Update_BOM_Details extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	BOM_Page BOMPage;

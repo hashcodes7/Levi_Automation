@@ -24,7 +24,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P2_TC"})
 public class TC154_P2_ArchiveField_Access_for_Grade_Rule_Template extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Measurements_Page MeasurementsPage;

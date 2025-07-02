@@ -31,7 +31,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups= {"P3_TC"})
 public class TC17_P3_CreateProduct_Colorway_SetUpLSE extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Palette_Page palettepage;

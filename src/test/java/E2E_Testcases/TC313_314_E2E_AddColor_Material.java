@@ -36,7 +36,7 @@ import junit.framework.Assert;
 
 @Test(enabled = true, groups = { "E2E_TC" })
 public class TC313_314_E2E_AddColor_Material extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	VendorPortalPage vendorPage;

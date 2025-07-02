@@ -29,7 +29,7 @@ import junit.framework.Assert;
 
 @Test(enabled = true, groups= {"P2_TC"})
 public class TC277_P2_RemoveComponentFromProductAndColorwaySections extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Colorway_page Colorwaypage;

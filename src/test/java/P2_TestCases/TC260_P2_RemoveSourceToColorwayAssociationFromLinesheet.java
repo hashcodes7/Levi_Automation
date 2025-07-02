@@ -34,7 +34,7 @@ import org.openqa.selenium.JavascriptExecutor;
 
 @Test(enabled = true, groups= {"P2_TC"})
 public class TC260_P2_RemoveSourceToColorwayAssociationFromLinesheet extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	SeasonPage seasonPage;
 	ProductPage productPage;

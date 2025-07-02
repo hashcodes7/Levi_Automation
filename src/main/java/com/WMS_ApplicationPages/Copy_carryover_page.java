@@ -21,7 +21,7 @@ import com.aventstack.extentreports.Status;
 import junit.framework.Assert;
 
 public class Copy_carryover_page extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public Copy_carryover_page(WebDriver driver) {
 		super(driver);

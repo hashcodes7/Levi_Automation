@@ -43,13 +43,13 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class WMS_TestBase implements WMS_GlobalProperties {
 
-	WebDriver driver;
+	
 	public static ExtentReports extent;
 	public ExtentHtmlReporter htmlReporter;
 	public ExtentTest test;
 	public boolean CloseBrowser = true;
 	public static KeepScreenAwake keepAwake;
-
+	protected WebDriver driver;
 	//--------------------------------------------------------------------------------------------------
 	public void setReport(String testName) throws InterruptedException {
 		if (extent == null) {
@@ -111,6 +111,7 @@ public class WMS_TestBase implements WMS_GlobalProperties {
 	
 	
 public WebDriver invokeBrowser() throws InterruptedException {
+	System.out.println("invoke function triggered");
     ChromeOptions options = new ChromeOptions();
     options.addArguments("--no-sandbox");
     options.addArguments("--disable-dev-shm-usage");

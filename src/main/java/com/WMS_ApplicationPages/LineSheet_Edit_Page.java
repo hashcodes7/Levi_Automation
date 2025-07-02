@@ -24,7 +24,7 @@ import com.aventstack.extentreports.Status;
 import junit.framework.Assert;
 
 public class LineSheet_Edit_Page extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public LineSheet_Edit_Page(WebDriver driver) {
 		super(driver);

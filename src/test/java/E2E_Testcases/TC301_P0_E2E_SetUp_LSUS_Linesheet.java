@@ -24,7 +24,7 @@ import Excel_Utilities.DataProviders;
 
 @Test(enabled = true, groups = { "E2E_TC" })
 public class TC301_P0_E2E_SetUp_LSUS_Linesheet extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	LineSheetPage lineSheetPage;

@@ -39,7 +39,7 @@ import Excel_Utilities.DataProviders;
 
 public class TC_Integration_Staging_Reused extends WMS_TestBase {
 
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	SeasonPage seasonPage;

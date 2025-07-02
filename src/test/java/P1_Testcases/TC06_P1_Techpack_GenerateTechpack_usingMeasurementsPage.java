@@ -23,7 +23,7 @@ import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups= {"P1_TC"})
 public class TC06_P1_Techpack_GenerateTechpack_usingMeasurementsPage extends WMS_TestBase{
 	
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	LineSheet_Edit_Page LineSheetEditPage;

@@ -21,7 +21,7 @@ import com.aventstack.extentreports.Status;
 import junit.framework.Assert;
 
 public class Set_Up_Page extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public Set_Up_Page(WebDriver driver) {
 		super(driver);

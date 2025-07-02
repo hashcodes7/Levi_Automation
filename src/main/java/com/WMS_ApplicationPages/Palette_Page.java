@@ -18,7 +18,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 public class Palette_Page extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 
 	public Palette_Page(WebDriver driver) {
 		super(driver);

@@ -30,7 +30,7 @@ public class AttachColorwayToProduct extends WMS_TestBase{
 	@FindBy(xpath = "//iframe[@id='contentframe']")
 	private WebElement iframeContenotframe;
 	
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Palette_Page palettepage;

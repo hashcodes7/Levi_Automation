@@ -19,7 +19,7 @@ import com.aventstack.extentreports.Status;
 import Excel_Utilities.DataProviders;
 @Test(enabled = true, groups = { "Color_Scenarios" })
 public class TC03_P1_UpdateExistingHeather_verifyName extends WMS_TestBase{
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Colorway_page Colorwaypage;

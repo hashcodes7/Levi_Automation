@@ -39,7 +39,7 @@ import com.relevantcodes.extentreports.LogStatus;
  *
  */
 public class CreateNewProductPage extends WMS_WebDriverUtilities {
-	WebDriver driver;
+	
 	
 	public CreateNewProductPage(WebDriver driver) {
 		super(driver);

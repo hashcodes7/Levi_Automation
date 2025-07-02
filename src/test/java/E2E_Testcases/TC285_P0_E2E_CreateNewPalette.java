@@ -21,7 +21,7 @@ import com.aventstack.extentreports.Status;
 import Excel_Utilities.DataProviders;
 
 public class TC285_P0_E2E_CreateNewPalette extends WMS_TestBase {
-	WebDriver driver;
+	
 	DashboardPage dashboardPage;
 	MainMenuPage mainMenuPage;
 	Palette_Page palettepage;
