@@ -116,7 +116,7 @@ public class WMS_TestBase implements WMS_GlobalProperties {
 	    ChromeOptions options = new ChromeOptions();
 
 	    // Mandatory for Linux/GitHub Actions environment
-//	    options.addArguments("--headless=new");
+	    options.addArguments("--headless=new");
 	    options.addArguments("--no-sandbox");
 	    options.addArguments("--disable-dev-shm-usage");
 	    options.addArguments("--disable-gpu");
