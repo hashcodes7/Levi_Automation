@@ -79,14 +79,18 @@ jobs:
           path: Failed_Screenshots/
           if-no-files-found: warn
 
-      - name: 📥 Commit HTML report to repository
+      - name: 📥 Commit HTML report to singleReport folder
         if: success()
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git pull origin main
-          git add Reports/*.html
-          git commit -m "Add test report [skip ci]" || echo "No changes to commit"
+
+          mkdir -p singleReport
+          mv Reports/*.html singleReport/
+
+          git add singleReport/*.html
+          git commit -m "Add test report to singleReport [skip ci]" || echo "No changes to commit"
           git push origin main
 
       - name: ⏳ Wait briefly after commit
@@ -118,9 +122,9 @@ jobs:
       - name: 🔗 Print Report Link
         id: print
         run: |
-          REPORT_PATH=$(find Reports -name "[0-9]*.html" | sort | tail -n 1)
+          REPORT_PATH=$(find singleReport -name "[0-9]*.html" | sort | tail -n 1)
           REPORT_NAME=$(basename "$REPORT_PATH")
-          FINAL_URL="https://hashcodes7.github.io/Levi_Automation/Reports/$REPORT_NAME"
+          FINAL_URL="https://hashcodes7.github.io/Levi_Automation/singleReport/$REPORT_NAME"
 
           echo "Final Report Name: $REPORT_NAME"
           echo "🔗 Clickable Report URL: $FINAL_URL"
