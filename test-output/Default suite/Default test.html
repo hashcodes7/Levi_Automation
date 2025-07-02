@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 02 07:21:24 IST 2025</td>
+<td>Started on:</td><td>Wed Jul 02 07:28:13 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>24 seconds (24779 ms)</td>
+<tr><td>Total time:</td><td>85 seconds (85182 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='smoketests.QuickSearchTest.afterMethod()'><b>afterMethod</b><br>Test class: smoketests.QuickSearchTest<br>Parameters: [TestResult name=searchFlexPLMObject status=FAILURE method=QuickSearchTest.searchFlexPLMObject()[pri:0, instance:smoketests.QuickSearchTest@1f9e9475] output={null}]</td>
-<td><div><pre>java.io.FileNotFoundException: C:\Users\2276537\OneDrive - Cognizant\Desktop\Automation\Levi_Automation-main\Failed_Screenshots\searchFlexPLMObject20250702072148.png (The system cannot find the path specified)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:291)
-	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:234)
-	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:184)
-	at org.openqa.selenium.io.FileHandler.copyFile(FileHandler.java:138)
-	at org.openqa.selenium.io.FileHandler.copy(FileHandler.java:117)
-	at com.WMS_Utilities.WMS_WebDriverUtilities.takeScreenshot(WMS_WebDriverUtilities.java:343)
+<td title='smoketests.QuickSearchTest.afterMethod()'><b>afterMethod</b><br>Test class: smoketests.QuickSearchTest<br>Parameters: [TestResult name=searchFlexPLMObject status=FAILURE method=QuickSearchTest.searchFlexPLMObject()[pri:0, instance:smoketests.QuickSearchTest@66ea810] output={null}]</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LTIN496259&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.WMS_Utilities.WMS_WebDriverUtilities.takeScreenshot(WMS_WebDriverUtilities.java:339)
 	at com.WMS_Utilities.WMS_TestBase.afterMethod(WMS_TestBase.java:83)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
@@ -119,15 +121,17 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace967643830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace967643830'><pre>java.io.FileNotFoundException: C:\Users\2276537\OneDrive - Cognizant\Desktop\Automation\Levi_Automation-main\Failed_Screenshots\searchFlexPLMObject20250702072148.png (The system cannot find the path specified)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:291)
-	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:234)
-	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:184)
-	at org.openqa.selenium.io.FileHandler.copyFile(FileHandler.java:138)
-	at org.openqa.selenium.io.FileHandler.copy(FileHandler.java:117)
-	at com.WMS_Utilities.WMS_WebDriverUtilities.takeScreenshot(WMS_WebDriverUtilities.java:343)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2089360295", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2089360295'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LTIN496259&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.WMS_Utilities.WMS_WebDriverUtilities.takeScreenshot(WMS_WebDriverUtilities.java:339)
 	at com.WMS_Utilities.WMS_TestBase.afterMethod(WMS_TestBase.java:83)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
@@ -164,7 +168,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>smoketests.QuickSearchTest@1f9e9475</td></tr>
+<td>smoketests.QuickSearchTest@66ea810</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -208,8 +212,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1648387359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1648387359'><pre>java.lang.Exception: Text entry for Search Field was unsuccessful ?
+</pre></div><a href='#' onClick='toggleBox("stack-trace1555055322", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1555055322'><pre>java.lang.Exception: Text entry for Search Field was unsuccessful ?
 	at com.WMS_ApplicationPages.DashboardPage.sendInputToTextField(DashboardPage.java:158)
 	at com.WMS_ApplicationPages.DashboardPage.headerDropdownSearch(DashboardPage.java:137)
 	at smoketests.QuickSearchTest.searchFlexPLMObject(QuickSearchTest.java:40)
@@ -242,8 +246,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>4</td>
-<td>smoketests.QuickSearchTest@1f9e9475</td></tr>
+<td>64</td>
+<td>smoketests.QuickSearchTest@66ea810</td></tr>
 </table><p>
 </body>
 </html>

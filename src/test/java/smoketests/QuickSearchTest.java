@@ -40,9 +40,11 @@ public class QuickSearchTest extends WMS_TestBase {
         dashboardPage.headerDropdownSearch("Product", "SOFTMARK TODDLER LEGGING");
 
         test.log(Status.INFO, "⏳ Waiting for page to load completely");
+        System.out.println("🔍 page loading.");
         WaitforPage(4000);
 
         test.log(Status.PASS, "🎯 Search completed and FlexPLM object loaded successfully");
+        System.out.println("🔍 wait done");
     }
 
 

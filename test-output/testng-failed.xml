@@ -5,8 +5,9 @@
     <classes>
       <class name="smoketests.QuickSearchTest">
         <methods>
-          <include name="tearDown"/>
+          <include name="setUpend"/>
           <include name="afterMethod"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
           <include name="searchFlexPLMObject"/>
           <include name="CreateSummary"/>
