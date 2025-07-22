@@ -1,1 +1,163 @@
 https://siemensplmlearningcenter.sabacloud.com/Saba/Web_spf/PRODTNT130/app/me/ledetail;spf-url=common%2Flearningeventdetail%2Fcrtfy000000001239018
+-------------------------------------------------------------Fundamentals in Polarion-1----------------------------------------------------------------
+What does ALM stands for?
+ Application Lifecycle Management
+
+Which is a valid Polarion Artifact?
+ Pages
+
+What is the smallest level of organization in Polarion?
+ Work Items
+
+What is the user personal Home page called?
+ My Polarion
+
+Can a query be shared to other users in the Project?
+ Yes, via a project level query
+-------------------------------------------------------------Fundamentals in Polarion-2----------------------------------------------------------------
+On a new Polarion installation, where can a user create a project ?
+ In the “Sandbox” project group
+
+Which template projects are available out-of-box?.
+ Agile Software Project and V-Model Project
+
+Which template was the Drive Pilot Project created from?
+ V-Model Project
+
+In the Drive Pilot Project, which type of specification is managed in the Requirements Space?
+ System Requirement Specification
+
+Which of these work item types is not part of the Drive Pilot project?
+ Epic
+
+From which template was the E-Library project created?
+ Agile Software Project
+
+Which of these work item types is not part of the E-Library project?
+ Software Requirement
+
+In the E-Library Project, in which space would you go to get more information about the planned iterations?
+ Development
+
+-------------------------------------------------------------Fundamentals in Polarion-3----------------------------------------------------------------
+Where can a Work Item be created?
+ In the Tracker View
+
+What is not part of a Work Item?
+ None of the Above
+
+Which one of these workflow rules is valid?
+ A workflow action can be restricted to a user with a specific project role
+
+Which one of these statements is true?
+ The arrow of a work item link always points to the parent
+
+How can a user know that a new comment was added to a work item?
+ By looking at the Project Activity Stream
+
+Which one of these statements is true?
+ Polarion can merge modifications done simultaneously to 2 different custom fields of the same work item
+-------------------------------------------------------------Fundamentals in Polarion-4----------------------------------------------------------------
+How can a LiveDoc be created?
+ From a template
+
+What can’t a LiveDoc contain?
+ Test Runs
+
+Which one of these statements is false?
+ You can add comments to a heading
+
+When configuring the Work Item presentation, where can custom fields be displayed?
+ As a table below each work item in the LiveDoc
+
+Which element can a cross reference link be created to?
+ Work Items
+
+Which one of these statements is not valid?
+ Polarion can merge the modifications done simultaneously to the description of the same work item
+-------------------------------------------------------------Fundamentals in Polarion-5----------------------------------------------------------------
+What is an Info Page typically used for?
+ For free-form textual information
+
+Which coding features and languages cannot be used in a scripted widget in a LiveReport?
+ Wiki macros
+
+What type of page should be used when creating a new report?
+ LiveReport page
+-------------------------------------------------------------Fundamentals in Polarion-6 plannig and tracking your development----------------------------------------------------------------
+What are Plans made of?
+ A page and associated work items
+
+Which one of these statements is false?
+ A Plan has a workflow
+
+Where can a Plan be created from?
+ The Plans topic
+-------------------------------------------------------------Fundamentals in Polarion-7 tracking test case execution----------------------------------------------------------------
+When adding a test case work item to a test run, what does it become?
+ Test Record
+
+Which one of these is an invalid method of Test Run Creation?
+ Via an email
+
+What will be the status of a test case that was not executed?
+ Waiting
+
+When executing a test case, what data can be entered for a test step?
+ Actual Result and Step Verdict
+-------------------------------------------------------------Fundamentals in Polarion-7 tracking test case execution----------------------------------------------------------------
+What can a collection contain?
+ Documents
+
+What happens when a document is opened from a collection?
+ The document opens in the collection context where you see all other documents included in the collection
+
+What happens when a collection is reused?
+ No documents are duplicated but only referenced in the new collection
+
+
+
+
+
+
+
+
+Which of these roles is NOT a valid default project role?
+project_reviewer
+In Software development, the V-Model Process is an extension of which process?
+ Waterfall
+Which industries use the V-Model Process?Automotive, Aerospace, Medical
+Which of these are typically linked to software requirements?
+Unit Test Case
+What Polarion Template should be used to create a project based on the V-Model process?
+V-Model Project
+Variant management components are defined in what order?
+Feature Model, Master Specification, Product Variant, Variant Specification
+How many Feature Models per Polarion project are allowed by Polarion?
+One
+What are the four Feature variation types?
+Mandatory, Optional, Alternative, Or
+A Restriction is an attribute of work items in which of the following?
+Master Specification
+A Product Variant is a special type of work item that collects specification items for
+The feature set of a single product in a product line
+Which of these statements is true?
+All of the above
+Which source code management solutions are supported by Polarion?
+All of the above
+Which Polarion Topic allows you to view build management files?
+Repository Browser
+Which of the following states can a build in Polarion have?
+Running, Failed, Successful
+Which work item type can a build be linked to by default?
+Release
+Which of the following is NOT part of Change Management?
+Meet with all Project Stakeholders
+Which of the following items does a baseline collection contain?
+Documents
+Which of the following items does a project baseline contain?
+Documents, Work Items, Plans, Test Runs, Reports
+How can a project baseline be created?
+From the current state of the project or any previous revision of the project
+Source code can only be linked to which work item type?
+All of the above
