@@ -272,44 +272,115 @@ Which of these statements is true?
  Variant specification documents can be created automatically via a Generate Documents button
  All of the above (tick)
  None of the above
+---------------------------3 Test Management in Polarion --Test Management Concepts in Polarion 2310-------------------------
+Why is testing necessary? (select all that apply)
+ Complexity of system is always increasing
+ Even highly skilled developers make mistakes
+ Testing improves quality
 
+What are valid testing goals? (select all that apply)
+ Manage risk
+ Validate product
+ Verify requirements
 
-Which of these roles is NOT a valid default project role?
-project_reviewer
-In Software development, the V-Model Process is an extension of which process?
- Waterfall
-Which industries use the V-Model Process?Automotive, Aerospace, Medical
-Which of these are typically linked to software requirements?
-Unit Test Case
-What Polarion Template should be used to create a project based on the V-Model process?
-V-Model Project
-Variant management components are defined in what order?
-Feature Model, Master Specification, Product Variant, Variant Specification
-How many Feature Models per Polarion project are allowed by Polarion?
-One
-What are the four Feature variation types?
-Mandatory, Optional, Alternative, Or
-A Restriction is an attribute of work items in which of the following?
-Master Specification
-A Product Variant is a special type of work item that collects specification items for
-The feature set of a single product in a product line
+What are typical Test Management features? (select all that apply)
+ Management of Test Cases
+ Management of Defects
+
+Test Closure is an activity of the Test Management process.
+ TRUE
+
+In Polarion, test management activities are only supported in the V-Model process.
+ FALSE
+
+---------------------------3 Test Management in Polarion --Test planning------------------------------------------------
+Test Planning is the process of defining the objectives of testing and the approach for meeting those objectives.
+ TRUE
+
+Test Planning should begin at or near the end of the Design phase.
+ FALSE
+
+The creation of the Test Plan includes which of the following activities: (select all that apply)
+ Determine the Scope, Risks & Objectives
+ Determine Test Approach
+ Schedule the Test Activities
+
+The Test Plan answers the question “what” will be tested, including which of the following:
+ Level of testing
+ Type of testing
+ Functions and features to be tested
+ Business and technical risks
+ Software and hardware platforms
+ Entry and exit criteria
+ All of the above (tick)
+
+Identify which of the following are considered levels of testing: (select all that apply)
+ Integration Test
+ System Test
+ User Acceptance Test
+
+Identify which of the following are considered types of testing: (select all that apply)
+ Functional Test
+ Non-functional Test
+
+A Master Test Plan describes the overall test strategy as well as the following: (select all that apply)
+ Test levels/types to be covered by the detailed test plans
+ Test execution cycles and schedule
+ Mechanism for management and control of testing
+---------------------------3 Test Management in Polarion --Test analysis------------------------------------------------
+Test Analysis answers the question “what to test?” while Test Design answers the question “how to test?”
+ TRUE
+
+A detailed test plan covers the following levels of a software product: (select all that apply)
+ Acceptance Level
+ Unit Level
+ Integration Level
+
+A typical Test Case should contain the following information: (select all that apply)
+ Test Procedure / Test Steps
+ Test Environment
+ Test Case Description
+ Pre-Requisites
+
+Polarion provides the following artifacts for testing activities: (select all that apply)
+ Test Case
+ Test Case Specification
+ Test Run
+
+In Polarion, it is possible to use parameterized test cases. That means a pre-defined variable takes different values during a test run. Where is the list of values stored?
+ Test Run, which contains the Test Case
+
+You can create your own test run templates in Polarion. What are the possible sources for test cases? (select all that apply)
+ LiveDocs
+ Manual selection
+ Baselines
+---------------------------4 Administration in Polarion --architecture------------------------------------------------
+Which of these components are part of the Polarion architecture?
+ Apache
+
+Which of these statements is incorrect?
+ When using LDAP as the authentication mechanism, no local Polarion users can be used.
+
+What is being used as the primary data storage by Polarion?
+ Subversion
+
+What is the most important location to backup in Polarion?
+ svn
+
 Which of these statements is true?
-All of the above
-Which source code management solutions are supported by Polarion?
-All of the above
-Which Polarion Topic allows you to view build management files?
-Repository Browser
-Which of the following states can a build in Polarion have?
-Running, Failed, Successful
-Which work item type can a build be linked to by default?
-Release
-Which of the following is NOT part of Change Management?
-Meet with all Project Stakeholders
-Which of the following items does a baseline collection contain?
-Documents
-Which of the following items does a project baseline contain?
-Documents, Work Items, Plans, Test Runs, Reports
-How can a project baseline be created?
-From the current state of the project or any previous revision of the project
-Source code can only be linked to which work item type?
-All of the above
+ To update Polarion to a newer version, there is no need to uninstall the current Polarion version.
+---------------------------4 Administration in Polarion --implementation------------------------------------------------
+Which of these topics is available under Administration and can ONLY be accessed by a global admin?
+ License
+
+Which of these templates is available via the Polarion extensions portal?
+ Intelligent Design Control
+
+Which of these statements is true?
+ A user with the role project_admin cannot access the global configuration.
+
+Which of these is NOT a typical phase of a Polarion implementation process?
+ Data Migration
+
+Where should a new Polarion configuration always start from?
+ An existing Polarion template
