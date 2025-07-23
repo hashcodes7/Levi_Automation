@@ -105,7 +105,7 @@ What will be the status of a test case that was not executed?
 
 When executing a test case, what data can be entered for a test step?
  Actual Result and Step Verdict
--------------------------------------------------------------Fundamentals in Polarion-7 tracking test case execution----------------------------------------------------------------
+-------------------------------------------------------------Fundamentals in Polarion-7 Support parallel development activities------------------
 What can a collection contain?
  Documents
 
@@ -115,11 +115,163 @@ What happens when a document is opened from a collection?
 What happens when a collection is reused?
  No documents are duplicated but only referenced in the new collection
 
+---------------------------2 Requirements Management Using V-Model --V-Model Concepts------------------------------------------------
+In Software development, the V-Model Process is an extension of which process?
+ Waterfall
 
+Which industries use the V-Model Process?
+ Automotive, Aerospace, Medical
 
+Which of these are typically linked to software requirements?
+ Unit Test Case
 
+What Polarion Template should be used to create a project based on the V-Model process?
+ V-Model Project
 
+Which of these roles is NOT a valid default project role?
+ project_reviewer
+---------------------------2 Requirements Management Using V-Model --Managing System Requirements ------------------------------------------------
+According to the IEEE, a Requirement is
+ A condition or capability needed by a user to solve a problem or achieve an objective
+ A condition or capability that must be met or possessed by a system or system component to satisfy a contract, standard, specification, or other formally imposed document
+ A documented representation of a condition or capability as in answer 1 or 2
+ All the above (tick)
 
+Which of the following is NOT a System Requirement type?
+ Non-functional Requirement
+
+The System Requirement Life Cycle Process starts with which activity?
+ Analyzing Stakeholder Requirements
+
+From which Polarion project Topic can a user import a Word Document?
+ Documents and Pages
+
+When exporting a LiveDoc for external collaboration, which export options are available in Polarion?
+ Review, Collaboration, & Prioritization
+
+When importing a Word document into Polarion
+ You create rules and can save them to use later
+
+How are ReqIF files imported into Polarion?
+ By clicking on a Space Index, then clicking the Plus icon and then Import ReqIF file
+
+To sign a document you need to open
+ The Signatures panel on the document
+
+When signing a document, what does the user need to provide?
+ Username and user password
+
+Document baselines can be viewed from
+ The document’s history page
+
+Documents can be exported in which format?
+ Word and PDF
+
+In the PDF exports, which of the following can be configured?
+ Header
+ Footer
+ All of the above (tick)
+ None of the above
+
+Which of the following is NOT an approach to increase capacity, speed, and quality?
+ Round-Trip Approach
+
+Which statement best defines the cloning approach?
+ We have a copy of the element, and the products themselves stay highly independent as nothing from the design should flow between them
+
+Which statement best defines the reuse of common elements (core assets)?
+ Core assets are maintained and managed in a portfolio of features and then reused in different variants of your products
+
+When branching a document, what happens to the work items contained in the document?
+ They are inserted as referenced work items
+
+Which of these is true about referenced work items?
+ Referenced work items can be frozen so that no modifications are propagated to them, and can be unfrozen if needed.
+
+Which statement best defines the Polarion merging capability?
+ The merging capability allows changes from the work items to flow from the child document back to the master
+
+Which two Polarion features both result in a new document being created?
+ Branching, Combining
+---------------------------2 Requirements Management Using V-Model --Managing Software Requirements in Polarion 2310------------------------------------------------
+What are the outputs of the Software Design Process?
+ Software Architecture Description and Software Detailed Design Description
+
+In addition to plain text, which of the following can be used to document the Software Architecture?
+ Diagrams
+ Tables
+ Pictures
+ All of the above (tick)
+
+Why do some industry standards, such as DO-178 in Aerospace, require establishing traceability between software requirements and source code?
+ To make sure that no software requirements are missing and to ensure that Change Impact Analyses are more complete and precise
+
+Source code management solutions such as Git or SVN allow
+ Revision control of the source code and establishment of baselines
+---------------------------2 Requirements Management Using V-Model --Managing Risks in Polarion 2310------------------------------------------------
+What does FMEA stand for?
+ Failure Modes and Effects Analysis
+
+Which of these fields’ values are typically part of the Risk Scoring Calculation?
+ Detection, Occurrence, Severity
+
+Mitigating a risk can result in which of the following?
+ All of the above
+
+What typically happens in FMEA analysis after a mitigation is determined?
+ A new Risk Priority Number is calculated based on the mitigation
+
+The FMEA report can be exported in which format?
+ All of the above
+---------------------------2 Requirements Management Using V-Model --Managing Changes in Polarion 2310------------------------------------------------
+Which of the following is NOT part of Change Management?
+ Meet with all Project Stakeholders
+
+Which of the following items does a baseline collection contain?
+ Documents
+
+Which of the following items does a project baseline contain?
+ Documents, Work Items, Plans, Test Runs, Reports
+
+How can a project baseline be created?
+ From the current state of the project or any previous revision of the project
+---------------------------2 Requirements Management Using V-Model --Building Software in Polarion 2310------------------------------------------------
+Which source code management solutions are supported by Polarion?
+ SVN, Git
+ GitHub, GitLab, Bitbucket
+ Perforce, PlasticSCM
+ All of the above (tick)
+
+Which Polarion Topic allows you to view build management files?
+ Repository Browser
+
+Which of the following states can a build in Polarion have?
+ Running, Failed, Successful
+
+Which work item type can a build be linked to by default?
+ Release
+---------------------------2 Requirements Management Using V-Model --Managing Variants in Polarion 2310------------------------------------------------
+Variant management components are defined in what order?
+ Feature Model, Master Specification, Product Variant, Variant Specification
+
+How many Feature Models per Polarion project are allowed by Polarion?
+ One
+
+What are the four Feature variation types
+ Mandatory, Optional, Alternative, Or
+
+A Restriction is an attribute of work items in which of the following?
+ Master Specification
+
+A Product Variant is a special type of work item that collects specification items for
+ The feature set of a single product in a product line
+
+Which of these statements is true?
+
+ You can compare variants via a Compare Variants button
+ Variant specification documents can be created automatically via a Generate Documents button
+ All of the above (tick)
+ None of the above
 
 
 Which of these roles is NOT a valid default project role?
